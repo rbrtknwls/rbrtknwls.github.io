@@ -306,7 +306,7 @@
 
 		.box > :last-child,
 		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
+		.box > :last-child > :last-child > :last-child 
 			margin-bottom: 0;
 		}
 
@@ -1047,7 +1047,7 @@
 	}
 
 		.item header {
-			border-top-left-radius: 4px;
+			border-top-left-radius: 5px;
 			border-top-right-radius: 4px;
 			margin: -3em 0 3em -3em;
 			width: calc(100% + 6em);
@@ -1132,7 +1132,7 @@
 				}
 
 			.item header:hover a {
-				-moz-transform: scale(1.1);
+				-moz-transform: scale(1.5);
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
@@ -1169,7 +1169,7 @@
 			width: calc(50% - 2em);
 		}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 720px) {
 
 		.item header {
 			height: 25em;
@@ -1437,7 +1437,7 @@
 		border-radius: 4px;
 	}
 
-		#main > header:first-child {
+		#main > header {
 			text-align: center;
 		}
 
