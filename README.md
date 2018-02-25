@@ -1,2 +1,2 @@
 # rbrtknwls.github.io
-HTML and CSS testing for Website Development
+My online CV, made from a prebulit CSS Sheet (Cause I am really bad css)
