@@ -1537,6 +1537,20 @@
         cursor: pointer;
     }
 
+    #CCCOverlay {
+        position: fixed;
+        display: none;
+        margin: auto;
+        width: 50%;
+        height: 60%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
 /* CTA */
 
 	#cta {

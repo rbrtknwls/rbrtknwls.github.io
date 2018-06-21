@@ -109,10 +109,30 @@
                         <section class="main items">
                             <article class="item">
                                 <header>
-                                    <a href="https://github.com/rbrtknwls/CCC_Solutions"><img src="images/ccc.jpg" alt="" /></a>
+                                    <a onclick = "CCCOn()"><img src="images/ccc.jpg" alt="" /></a>
                                     <h3>CCC Workspace</h3>
                                 </header>
-                                <p>A repository where I store solutions to past CCC problems (averaging S1-S2 problems), generally solved in Python or C++ and sometimes Java. </p>
+                                <div id="CCCOverlay" onclick="CCCOff()">
+                                    <section id="overtxt" class="main">
+                                        <h2>CCC Workspace;</h2>
+                                        <p>A repository where I store solutions to past CCC problems (averaging S1-S2 problems), generally solved in Python or C++ and sometimes Java. </p>
+                                        <h3>See More:</h3>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/rbrtknwls/CCC_Solutions" class = "button">Github</a></li>
+                                        </ul>
+                                    </section>
+                                    
+                                </div>
+                                <script>
+                                function CCCOn() {
+                                    document.getElementById("CCCOverlay").style.display = "block";
+                                }
+
+                                function CCCOff() {
+                                    document.getElementById("CCCOverlay").style.display = "none";
+                                }
+                                </script>
+                                
                             </article>
                             <article class="item">
                                 <header>
