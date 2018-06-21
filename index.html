@@ -5,19 +5,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-        #overlay {
-            position: fixed;
-            display: none;
-            margin: auto;
-            width: 50%;
-            height: 60%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 2;
-            cursor: pointer;</style>
+        
+        
 	</head>
     
 	<body>
@@ -127,31 +116,72 @@
                             </article>
                             <article class="item">
                                 <header>
-                                    <a href="https://github.com/worldaffairsconference/world.ac"><img src="images/WAC.svg" alt="" /></a>
+                                    <a onclick = "WACOn()"><img src="images/WAC.svg" alt="" /></a>
                                     <h3>World Affairs Conference 2018</h3>
                                 </header>
-                                <p>The World Affairs Conference (WAC) is Canada's oldest annual student-run current affairs conference hosted at Upper Canada College.</p>
+                                <div id="WACOverlay" onclick="WACOff()">
+                                    <section id="overtxt" class="main">
+
+                                        <h2>World Affairs Conference 2017-2019;</h2>
+                                        <p>The World Affairs Conference (WAC) is Canada's oldest annual student-run current affairs conference hosted at Upper Canada College.</p>
+                                        <h3>See More:</h3>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/worldaffairsconference/world.ac" class = "button">Github</a></li>
+                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">Website</a></li>
+                                        </ul>
+                                    </section>
+                                    
+                                </div>
+                                <script>
+                                function WACOn() {
+                                    document.getElementById("WACOverlay").style.display = "block";
+                                }
+
+                                function WACOff() {
+                                    document.getElementById("WACOverlay").style.display = "none";
+                                }
+                                </script>
+                            
+                                
                             </article>
                             <article class="item">
                                 <header>
-                                    <a href="https://github.com/rbrtknwls/2.5D-Python-Skiing-game"><img src="images/sking.jpg" alt="" /></a>
+                                    <a onclick = SkiOn()><img src="images/sking.jpg" alt="" /></a>
                                     <h3>2.5D Skiing Game</h3>
                                 </header>
-                                <p>A simple 2.5D skiing game, made for the OLPC (port instructions inside), made for my ICS3U Class using built in python graphics and basic math</p>
-                                <ul class="actions">
-                                    <li><a href="https://docs.google.com/presentation/d/1qhYZ2ZeF8jQaPckfk7AfHFfW5u4tbtIhVXrwpkXMsac/edit?usp=sharing" class="button">Process</a></li>
-                                    <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">V 1.1</a></li>
-                                </ul>
+                                <div id="SkiOverlay" onclick="SkiOff()">
+                                    
+                                    <section id="overtxt" class="main">
+
+                                        <h2>Ski Game;</h2>
+                                        <p>A simple 2.5D skiing game, made for the OLPC (port instructions inside), made for my ICS3U Class using built in python graphics and basic math</p>
+                                        <h3>See More:</h3>
+                                        <ul class="actions">
+                                            <li><a href="https://docs.google.com/presentation/d/1qhYZ2ZeF8jQaPckfk7AfHFfW5u4tbtIhVXrwpkXMsac/edit?usp=sharing" class="button">Process</a></li>
+                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">V 1.1</a></li>
+                                        </ul>
+                                    </section>
+                                    
+                                </div>
+                                <script>
+                                function SkiOn() {
+                                    document.getElementById("SkiOverlay").style.display = "block";
+                                }
+
+                                function SkiOff() {
+                                    document.getElementById("SkiOverlay").style.display = "none";
+                                }
+                                </script>
                             </article>
                             
                             <article class="item">
                                 <header>
-                                    <a onclick = "on()"><img src="images/algo.jpg" alt="" /></a>
+                                    <a onclick = "AlgoOn()"><img src="images/algo.jpg" alt="" /></a>
                                     <h3>Algorithm Misc</h3>
                                 </header>
-                                <div id="overlay" onclick="off()">
+                                <div id="AlgoOverlay" onclick="AlgoOff()">
                                     
-                                    <section id="over" class="main">
+                                    <section id="overtxt" class="main">
 
                                         <h2>Algorithm Misc;</h2>
                                         <p>A miscellaneous header for my other contest/algorithm workplaces, and some work for some of my ICS4U class</p>
@@ -161,17 +191,19 @@
                                             <li><a href="https://github.com/rbrtknwls/ICS4U-Game" class="button">ICS4U</a></li>
                                         </ul>
                                     </section>
+                                    
                                 </div>
-                            </article>
-                            <script>
-                            function on() {
-                                document.getElementById("overlay").style.display = "block";
-                            }
+                                <script>
+                                function AlgoOn() {
+                                    document.getElementById("AlgoOverlay").style.display = "block";
+                                }
 
-                            function off() {
-                                document.getElementById("overlay").style.display = "none";
-                            }
+                                function AlgoOff() {
+                                    document.getElementById("AlgoOverlay").style.display = "none";
+                                }
                             </script>
+                            </article>
+                            
                         </section>
                         
                 
