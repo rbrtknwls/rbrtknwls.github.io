@@ -5,7 +5,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+        #overlay {
+            position: fixed;
+            display: none;
+            margin: auto;
+            width: 50%;
+            height: 60%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            cursor: pointer;</style>
 	</head>
+    
 	<body>
 
 		<!-- Header -->
@@ -132,15 +146,32 @@
                             
                             <article class="item">
                                 <header>
-                                    <a href="https://github.com/rbrtknwls/ICS4U-Project_2-Fuctions"><img src="images/algo.jpg" alt="" /></a>
+                                    <a onclick = "on()"><img src="images/algo.jpg" alt="" /></a>
                                     <h3>Algorithm Misc</h3>
                                 </header>
-                                <p>A miscellaneous header for my other contest/algorithm workplaces, and some work for some of my ICS4U class</p>
-                                <ul class="actions">
-                                    <li><a href="https://github.com/rbrtknwls/Project-Euler" class="button">Euler</a></li>
-                                    <li><a href="https://github.com/rbrtknwls/ICS4U-Game" class="button">ICS4U</a></li>
-                                </ul>
+                                <div id="overlay" onclick="off()">
+                                    
+                                    <section id="over" class="main">
+
+                                        <h2>Algorithm Misc;</h2>
+                                        <p>A miscellaneous header for my other contest/algorithm workplaces, and some work for some of my ICS4U class</p>
+                                        <h3>See More:</h3>
+                                        <ul class="actions">
+                                            <li><a href="https://github.com/rbrtknwls/Project-Euler" class="button">Euler</a></li>
+                                            <li><a href="https://github.com/rbrtknwls/ICS4U-Game" class="button">ICS4U</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
                             </article>
+                            <script>
+                            function on() {
+                                document.getElementById("overlay").style.display = "block";
+                            }
+
+                            function off() {
+                                document.getElementById("overlay").style.display = "none";
+                            }
+                            </script>
                         </section>
                         
                 
