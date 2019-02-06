@@ -271,7 +271,7 @@
 	}
 
 		a:hover {
-			color: #EF6480 !important;
+			color: #1541ef !important;
 		}
 
 	strong, b {
@@ -1082,7 +1082,7 @@
 			}
 
 				.item header a:hover {
-					color: #EF6480 !important;
+					color: #5792C4 !important;
 				}
 
 			.item header strong, .item header b {
@@ -1295,7 +1295,7 @@
 		}
 
 			#header a:hover {
-				color: #EF6480 !important;
+				color: #5792C4 !important;
 			}
 
 		#header strong, #header b {

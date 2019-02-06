@@ -4390,6 +4390,7 @@ nav ul li {
   transition: background-color .3s;
   float: left;
   padding: 0;
+
 }
 
 nav ul li.active {
@@ -5095,7 +5096,7 @@ small {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #ee6e73;
+  color: #1E3243;
 }
 
 .tabs .tab.disabled a,

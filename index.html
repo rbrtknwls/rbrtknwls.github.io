@@ -37,7 +37,7 @@
         <div id="menu">
             <nav>
     <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down">
         <li><a href="#">TL;DR</a></li>
         <li><a href="#">Education/Work</a></li>
         <li><a href="#">Projects</a></li>
@@ -56,7 +56,7 @@
             var box =  document.querySelector('#screen2');
             var boxPosition = box.getBoundingClientRect().top;
             window.addEventListener('scroll', function() {
-                if (window.pageYOffset >= boxPosition-600) {
+                if (window.pageYOffset >= boxPosition-800) {
                     menu.style.top = '0px';
                 } else {
                     menu.style.top = 'calc(92%)';
