@@ -1,2 +1,3 @@
 # rbrtknwls.github.io
-My online CV, made from a prebulit CSS Sheet (Cause I am really bad css)
+My online CV....
+Give me some time and it will be sicckkkk
