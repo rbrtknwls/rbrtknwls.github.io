@@ -5,13 +5,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/materialize.css">
+        
         
         
 	</head>
     
 	<body>
         <script>
-            var traits = ["A Meme Page Admin", "A Club Head", "A Swimmer", "A Runner", "A Front End Developer", "A Self Declared Beat Saber Master", "A Gamer", "A Hackathon Organizer", "A logistician"]
+            var traits = ["A Meme Page Admin", "A Club Head", "A Swimmer", "A Runner", "A Front End Developer", "A Self Declared Beat Saber Master", "A Hackathon Organizer", "A logistician"]
             var colors = ['#33B5FF', '#33B5FF', '#33B5FF'];
             
             function cycletext(n){
@@ -32,14 +34,41 @@
 					<p id = "trait"> A Coder </p>
 				</div>
 			</header>
-            
-		<!-- Wrapper -->
+        <div id="menu">
+            <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">TL;DR</a></li>
+        <li><a href="#">Education/Work</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Recognition</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+    </div>
+
+
+<div id="screen2">
+</div>
+        <script>
+            var menu =  document.querySelector('#menu');
+            var box =  document.querySelector('#screen2');
+            var boxPosition = box.getBoundingClientRect().top;
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset >= boxPosition-600) {
+                    menu.style.top = '0px';
+                } else {
+                    menu.style.top = 'calc(92%)';
+                }
+            });
+        </script>
 			<div id="wrapper">
 
 				<!-- Banner -->
-					<section id="intro" class="main">
+					<section id="main" class="main">
 
-						<h2>TLDR;</h2>
+						<h2>TL;DR</h2>
 						<p>I'm a passionate sixteen-year-old student at Upper Canada College, <br> Who is hoping to apply my skills in real world scenarios. <br> I am currently focusing on Data Management, Algorithms and Robotics.</p>
 						<ul class="actions">
 							<li><a href="doc/Resume_Final_2018.pdf" class="button big">Download My Resume</a></li>
@@ -47,7 +76,7 @@
 					</section>
                 
                 
-				<!-- Experience -->
+				<!-- Experience 
                     <section id="main" class="main">
                         <header>
                             <h2>Work / Internships</h2>
@@ -235,7 +264,7 @@
                             </article>
                             
                         </section>
-                        
+                        -->
                 
                 
 				

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
 
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -11,7 +11,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 		display: block;
 	}
 
@@ -68,7 +68,7 @@
 	}
 
 	body {
-		background: #f4f4f4;
+		background: #EFF5FA;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -85,7 +85,7 @@
 /* Type */
 
 	body {
-		background-color: #EFF5FA;
+		background-color: #1E3243;
 		color: #666666;
 	}
 
@@ -1041,7 +1041,7 @@
 
 	.item {
 		padding: 3em 3em 1em 3em;
-		background-color: #ffffff;
+		background-color: #EFF5FA;
 		border-radius: 4px;
 		text-align: center;
 	}
@@ -1068,10 +1068,13 @@
 			color: rgba(255, 255, 255, 0.75);
 			position: relative;
 			overflow: hidden;
+            position: relative;
+            z-index: 0;
+            padding-top:60px;
 		}
 
 			.item header input, .item header select, .item header textarea {
-				color: #ffffff;
+				color: #EFF5FA;
 			}
 
 			.item header a {
@@ -1083,11 +1086,11 @@
 				}
 
 			.item header strong, .item header b {
-				color: #ffffff;
+				color: #EFF5FA;
 			}
 
 			.item header h1, .item header h2, .item header h3, .item header h4, .item header h5, .item header h6 {
-				color: #ffffff;
+				color: #EFF5FA;
 			}
 
 			.item header blockquote {
@@ -1140,7 +1143,7 @@
 
 			.item header > * {
 				position: relative;
-				z-index: 1;
+				z-index: 0;
 			}
 
 			.item header h3 {
@@ -1265,7 +1268,7 @@
 /* Header */
 
 	#header {
-		background-color: #444;
+		background-color: #EFF5FA;
 		color: rgba(255, 255, 255, 0.75);
         
 		
@@ -1334,13 +1337,13 @@
 
 		#header .inner {
 			position: relative;
-			z-index: 1;
+			z-index: 0;
 		}
 
 		#header.alt {
 			height: 30em;
 			min-height: 30em;
-			min-height: 90vh;
+			min-height: 100vh;
 		}
 
 			#header.alt:before {
@@ -1416,7 +1419,7 @@
 
 	#main {
 		padding: 4em 4em 2em 4em;
-		background-color: #ffffff;
+		background-color: #EFF5FA;
 		border-radius: 4px;
 	}
 
@@ -1444,7 +1447,7 @@
 
 	#intro {
 		padding: 4em 4em 2em 4em;
-		background-color: white;
+		background-color: EFF5FA;
 		border-radius: 4px;
 		text-align: center;
 	}
@@ -1488,7 +1491,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 0;
         cursor: pointer;
     }
 
@@ -1502,7 +1505,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 0;
         cursor: pointer;
     }
 
@@ -1516,7 +1519,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 0;
         cursor: pointer;
     }
 
@@ -1530,7 +1533,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 0;
         cursor: pointer;
     }
 
@@ -1596,3 +1599,20 @@
 				}
 
 		}
+#screen2{
+      width: 1%;
+      background-color: #1E3243;
+      /*only for example*/height: 1px; 
+      /*unimportant*/padding-top: 1px;
+      /*unimportant*/text-align: center;
+    }
+            #menu{
+  transition:1s;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top:calc(92%);
+  background-color: transparent;
+  z-index: 5;
