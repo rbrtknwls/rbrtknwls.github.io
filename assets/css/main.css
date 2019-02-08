@@ -1631,7 +1631,7 @@ ol.type li {
 }
 ol.type li a {
 	background: transparent;
-	color: #526cbb;
+	color: black;
     border-bottom: solid 1px;
 	padding:5px 5px;
 }
