@@ -23,46 +23,52 @@
 	</head>
     
 	<body>
-        <script>
-            var traits = ["Meme Page Admin", "Club Head", "Runner", " Front End Developer", " Self Declared Beat Saber Master", " Really Really Really Bad Cook", " Even Worse Linguist", " Hackathon Organizer", " Latin Scholar","Swimmer", " Tired Guy", " HL Math Student", " \"Smart\" Dude - The Simon Guo"," Logistician" ]
-            var colors = ['#33B5FF', '#33B5FF', '#33B5FF'];
-            
-            function cycletext(n){
-                var random_color = colors[Math.floor(Math.random() * colors.length)];
-                setTimeout(function() {
-                     n = (n + 1)%traits.length;
-                    document.getElementById("trait").innerHTML = traits[n];
-                    cycletext(n);
-                }, 2000);
-                
-            }
-            cycletext(0);
-        </script>
-		<!-- Header -->
+        
+		<!-- Splash Page -->
 			<header id="header" class="alt">
+                
+                <!--- Trait Changing -->
+                
+                <script>
+                    var traits = ["Meme Page Admin", "Club Head", "Runner", " Front End Developer", " Self Declared Beat Saber Master", " Really Really Really Bad Cook", " Even Worse Linguist", " Hackathon Organizer", " Latin Scholar","Swimmer", " Tired Guy", " HL Math Student", " \"Smart\" Dude - The Simon Guo"," Logistician" ]
+                    var colors = ['#33B5FF', '#33B5FF', '#33B5FF'];
+            
+                    function cycletext(n){
+                        var random_color = colors[Math.floor(Math.random() * colors.length)];
+                        setTimeout(function() {
+                             n = (n + 1)%traits.length;
+                            document.getElementById("trait").innerHTML = traits[n];
+                            cycletext(n);
+                        }, 2000);
+
+                    }
+                    cycletext(0);
+                </script>
+                
 				<div class="inner">
 					<h1>Robert Knowles</h1>
 					<p id = "trait"> Coder </p>
 				</div>
 			</header>
-        <div id="menu">
-            <nav>
-    <div class="nav-wrapper">
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">TL;DR</a></li>
-        <li><a href="#">Education/Work</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Recognition</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-    </div>
-
-
-<div id="screen2">
-</div>
-        <script>
+        
+            <!-- Nav Bar -->
+        
+            <div id="menu">
+                <nav>
+                    <div class="nav-wrapper">
+                      <ul class="right hide-on-med-and-down">
+                        <li><a href="#main">TL;DR</a></li>
+                        <li><a href="#">Education/Work</a></li>
+                        <li><a href="#pro">Projects</a></li>
+                        <li><a href="#">Recognition</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="screen2">
+            </div>
+            <script>
             var menu =  document.querySelector('#menu');
             var box =  document.querySelector('#screen2');
             var boxPosition = box.getBoundingClientRect().top;
@@ -73,11 +79,13 @@
                     menu.style.top = 'calc(92%)';
                 }
             });
-        </script>
+            </script>
+        
+            <!-- Main Stuff -->
 			<div id="wrapper">
 
 				<!-- TL;DR -->
-					<section id="main" class="main">
+                <section id="main" class = "main">
 
 						<h2>TL;DR</h2>
 						<p>I'm a passionate sixteen-year-old student at Upper Canada College, <br> Who is hoping to apply my skills in real world scenarios. <br> I am currently focusing on Data Management, Algorithms and Robotics.</p>
@@ -86,127 +94,126 @@
 						</ul>
 					</section>
                 
-                
-                <section id = "main">
-                        <h2 class = "center">Projects</h2>
-                    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".hack">Hackathon</a></li>
-            <li><a href="#" data-filter=".work">Work</a></li>
-            <li><a href="#" data-filter=".event">Event Hosting</a></li>
-            <li><a href="#" data-filter=".res">Side Projects</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Get Smart(er)</h4>
-                <small>Hackathon Project</small> </div>
-              <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 work">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="http://worldaffairs.ucc.on.ca/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>World Affairs Conference</h4>
-                <small>Head of Technology</small> </div>
-              <img src="img/projects/wlogo.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>S(ECURE) AID</h4>
-                <small>Hackathon Project</small> </div>
-              <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 res">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://drive.google.com/file/d/1iqU-cFzAlFy98lTBdQYt-valzvY8Rhue/view?usp=sharing" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Death of Democracy</h4>
-                <small>Latin Research Essay</small> </div>
-              <img src="img/projects/latinIA.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 event hack">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="http://thacks.tech/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>THacks 2</h4>
-                <small>Hackathon Organizing</small> </div>
-              <img src="img/projects/thacks.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 work">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="http://torontohacker.club/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Toronto Hacker Club</h4>
-                <small>Logistics Team</small> </div>
-              <img src="img/projects/tohc.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Tech Night</h4>
-                <small>Youth Outreach Organizing</small> </div>
-              <img src="img/projects/tnight.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://www.facebook.com/events/1753044898045337/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Brain Browse</h4>
-                <small>Conference Organizing</small> </div>
-              <img src="img/projects/bbrowse.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 res">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Algorithmic Workspace</h4>
-                <small>Outdated Algorithmic Code Storage</small> </div>
-              <img src="img/projects/algo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 res">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Project Archive</h4>
-                <small>Finished Games and Activites</small> </div>
-              <img src="img/projects/ski.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 res">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="https://www.facebook.com/DankLatinMemes/" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Dank Latin Memes</h4>
-                <small>Founder of a Meme Page with 18k likes</small> </div>
-              <img src="img/projects/dlm.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-            </div>
-        
+                <!-- Projects -->
+                <section id = "pro">
+                    <h2 class = "center">Projects</h2>
+                        <div class="categories">
+                          <ul class="cat">
+                            <li>
+                              <ol class="type">
+                                <li><a href="#" data-filter="*" class="active">All</a></li>
+                                <li><a href="#" data-filter=".hack">Hackathon</a></li>
+                                <li><a href="#" data-filter=".work">Work</a></li>
+                                <li><a href="#" data-filter=".event">Event Hosting</a></li>
+                                <li><a href="#" data-filter=".res">Side Projects</a></li>
+                              </ol>
+                            </li>
+                          </ul>
+                      <div class="clearfix"></div>
                     </div>
+                    <div class="row">
+                      <div class="portfolio-items">
+                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Get Smart(er)</h4>
+                                <small>Hackathon Project</small> </div>
+                              <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 work">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="http://worldaffairs.ucc.on.ca/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>World Affairs Conference</h4>
+                                <small>Head of Technology</small> </div>
+                              <img src="img/projects/wlogo.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>S(ECURE) AID</h4>
+                                <small>Hackathon Project</small> </div>
+                              <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 res">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://drive.google.com/file/d/1iqU-cFzAlFy98lTBdQYt-valzvY8Rhue/view?usp=sharing" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Death of Democracy</h4>
+                                <small>Latin Research Essay</small> </div>
+                              <img src="img/projects/latinIA.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 event hack">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="http://thacks.tech/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>THacks 2</h4>
+                                <small>Hackathon Organizing</small> </div>
+                              <img src="img/projects/thacks.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 work">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="http://torontohacker.club/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Toronto Hacker Club</h4>
+                                <small>Logistics Team</small> </div>
+                              <img src="img/projects/tohc.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Tech Night</h4>
+                                <small>Youth Outreach Organizing</small> </div>
+                              <img src="img/projects/tnight.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://www.facebook.com/events/1753044898045337/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Brain Browse</h4>
+                                <small>Conference Organizing</small> </div>
+                              <img src="img/projects/bbrowse.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 res">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Algorithmic Workspace</h4>
+                                <small>Outdated Algorithmic Code Storage</small> </div>
+                              <img src="img/projects/algo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 res">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Project Archive</h4>
+                                <small>Finished Games and Activites</small> </div>
+                              <img src="img/projects/ski.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                          <div class="col-sm-6 col-md-3 col-lg-3 res">
+                          <div class="portfolio-item">
+                            <div class="hover-bg"> <a href="https://www.facebook.com/DankLatinMemes/" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>Dank Latin Memes</h4>
+                                <small>Founder of a Meme Page with 18k likes</small> </div>
+                              <img src="img/projects/dlm.png" class="img-responsive" alt="Project Title"> </a> </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
                     
                 
                       

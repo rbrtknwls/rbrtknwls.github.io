@@ -1447,6 +1447,37 @@
 			}
 
 		}
+/* Projects */
+
+    #pro {
+		padding: 4em 4em 2em 4em;
+		background-color: #EFF5FA;
+		border-radius: 4px;
+        
+	}
+        #pro h2{
+            color: #66AFD6;
+        }
+		#pro > header {
+			text-align: center;
+            
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#pro {
+				padding: 2em 2em 0.1em 2em;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#pro {
+				padding: 2em 1em 0.1em 1em;
+			}
+
+		}
 
 /* Intro */
 
