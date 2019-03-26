@@ -4315,7 +4315,7 @@ nav .nav-wrapper {
 }
 
 nav .sidenav-trigger {
-  float: left;
+  float: right;
   position: relative;
   z-index: 1;
   height: 100px;
@@ -4369,7 +4369,7 @@ nav .brand-logo.right {
 nav .brand-logo i,
 nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
 nav .brand-logo i.material-icons {
-  float: left;
+  float: right;
   margin-right: 15px;
 }
 
@@ -4388,10 +4388,13 @@ nav ul li {
   transition: background-color .3s;
   float: left;
   padding: 0;
+  font-family: "Garamond";
+  border-left: solid 1px;
 
 }
 
 nav ul li.active {
+  text-decoration: underline;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -4418,6 +4421,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 nav ul.left {
