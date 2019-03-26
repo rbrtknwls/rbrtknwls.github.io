@@ -164,7 +164,7 @@
 	h2 {
 		font-size: 1.75em;
         text-decoration: underline;
-        color: 4B8BC1;
+        color: #444444;
 	}
 
 	h3 {
@@ -738,7 +738,6 @@
 	}
 
 		.image img {
-			border-radius: 4px;
 			display: block;
 		}
 
@@ -1305,6 +1304,7 @@
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #4B8BC1;
+            
 		}
 
 		#header blockquote {
@@ -1425,7 +1425,7 @@
         
 	}
         #main h2{
-            color: #66AFD6;
+            color: #444444;
         }
 		#main > header {
 			text-align: center;
@@ -1456,7 +1456,7 @@
         
 	}
         #pro h2{
-            color: #66AFD6;
+            color:#444444;
         }
 		#pro > header {
 			text-align: center;
@@ -1653,22 +1653,21 @@
 }
 ul.cat li {
 	display: inline-block;
+    text-align: left;
     
 }
 ol.type li {
 	display: inline-block;
-	margin-left: 20px;
+    padding-right: 15px;
 	text-transform: uppercase;
 }
 ol.type li a {
 	background: transparent;
 	color: black;
     border-bottom: solid 1px;
-	padding:5px 5px;
 }
 ol.type li a.active {
-	background: #1E3243;
-	color: #fff;
+	color: #1541ef;
     text-decoration: none;
 }
 ol.type li a:hover {
@@ -1688,7 +1687,7 @@ ol.type li a:hover {
 }
 
 .portfolio-item {
-	margin: 15px 0;
+    padding: none;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
@@ -1702,8 +1701,10 @@ ol.type li a:hover {
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
 }
+.portfolio-item img{
+    width: 100%;
+}
 .portfolio-item .hover-bg {
-	height: 170px;
 	overflow: hidden;
 	position: relative;
 }
