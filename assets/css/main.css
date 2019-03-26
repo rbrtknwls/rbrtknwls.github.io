@@ -1723,7 +1723,7 @@ ol.type li a:hover {
 	opacity: 1;
 }
  #menu{
-  transition:1s;
+  transition:0.5s;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -1732,5 +1732,6 @@ ol.type li a:hover {
   top:calc(92%);
   background-color: transparent;
   z-index: 5;
+  
 }
 }

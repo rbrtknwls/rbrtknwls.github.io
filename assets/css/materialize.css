@@ -3396,10 +3396,8 @@ span.badge[data-badge-caption]::after {
 nav ul a span.badge {
   display: inline-block;
   float: none;
-  margin-left: 4px;
   line-height: 22px;
   height: 22px;
-  -webkit-font-smoothing: auto;
 }
 
 .collection-item span.badge {
@@ -4275,7 +4273,7 @@ nav {
   width: 100%;
   height: 100px;
   line-height: 100px;
-  border: solid 2px;
+  border-bottom: 1px black;
 }
 
 nav.nav-extended {
