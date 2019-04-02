@@ -141,7 +141,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -164,7 +164,7 @@
 	h2 {
 		font-size: 1.75em;
         text-decoration: underline;
-        color: 4B8BC1;
+        color: #444444;
 	}
 
 	h3 {
@@ -356,9 +356,7 @@
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
-		.button.icon:before {
-			margin-right: 0.5em;
-		}
+
 
 		input[type="submit"].fit,
 		input[type="reset"].fit,
@@ -454,7 +452,7 @@
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
-		margin: 0 0 1em 0;
+		margin: 0 0 0em 0;
 	}
 
 	input[type="text"],
@@ -549,8 +547,6 @@
 			display: inline-block;
 			font-size: 1em;
 			font-weight: 200;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
 			position: relative;
 		}
 
@@ -738,7 +734,6 @@
 	}
 
 		.image img {
-			border-radius: 4px;
 			display: block;
 		}
 
@@ -764,7 +759,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 			width: 100%;
 		}
 
@@ -774,7 +769,7 @@
 
 		.image.main {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 0 0 0;
 			width: 100%;
 		}
 
@@ -786,8 +781,7 @@
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
+		margin: 0 0 0 0;
 	}
 
 		ol li {
@@ -797,7 +791,6 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -827,7 +820,6 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
 			}
 
 				ul.icons li:last-child {
@@ -842,7 +834,7 @@
 
 			ul.actions li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 0 0 0;
 				vertical-align: middle;
 			}
 
@@ -1049,7 +1041,6 @@
 
 		.item header {
 			border-top-left-radius: 5px;
-			border-top-right-radius: 4px;
 			margin: -3em 0 3em -3em;
 			width: calc(100% + 6em);
 			height: 15em;
@@ -1168,8 +1159,8 @@
 	}
 
 		.items .item {
-			margin: 2em 0 0 2em;
-			width: calc(50% - 2em);
+			margin: 0em 0 0 0em;
+			width: 50%
 		}
 
 	@media screen and (max-width: 720px) {
@@ -1305,6 +1296,7 @@
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #4B8BC1;
+            
 		}
 
 		#header blockquote {
@@ -1425,7 +1417,7 @@
         
 	}
         #main h2{
-            color: #66AFD6;
+            color: #444444;
         }
 		#main > header {
 			text-align: center;
@@ -1456,7 +1448,7 @@
         
 	}
         #pro h2{
-            color: #66AFD6;
+            color:#444444;
         }
 		#pro > header {
 			text-align: center;
@@ -1635,13 +1627,7 @@
 				}
 
 		}
-#screen2{
-      width: 1%;
-      background-color: #1E3243;
-      /*only for example*/height: 1px; 
-      /*unimportant*/padding-top: 1px;
-      /*unimportant*/text-align: center;
-    }
+
 
 #portfolio {
 	padding: 100px 0;
@@ -1653,22 +1639,20 @@
 }
 ul.cat li {
 	display: inline-block;
+    text-align: left;
     
 }
 ol.type li {
 	display: inline-block;
-	margin-left: 20px;
 	text-transform: uppercase;
 }
 ol.type li a {
 	background: transparent;
 	color: black;
     border-bottom: solid 1px;
-	padding:5px 5px;
 }
 ol.type li a.active {
-	background: #1E3243;
-	color: #fff;
+	color: #1541ef;
     text-decoration: none;
 }
 ol.type li a:hover {
@@ -1688,24 +1672,23 @@ ol.type li a:hover {
 }
 
 .portfolio-item {
-	margin: 15px 0;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+    margin: 0px 0px 0px 0px;
 }
-.portfolio-item:hover {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
+.portfolio-item img{
+    width: 100%;
+    
 }
 .portfolio-item .hover-bg {
-	height: 170px;
-	overflow: hidden;
 	position: relative;
+}
+.aaaa img{
+    width: 500px;
+    height: 262px;
+}
+.psh img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .hover-bg .hover-text {
 	position: absolute;
@@ -1717,21 +1700,10 @@ ol.type li a:hover {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: all 0.5s;
+	transition: all 0.2s;
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
-}
- #menu{
-  transition:0.5s;
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top:calc(92%);
-  background-color: transparent;
-  z-index: 5;
-  
+    
 }
 }

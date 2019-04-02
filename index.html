@@ -52,7 +52,7 @@
 			</header>
         
             <!-- Nav Bar -->
-        
+            <!--
             <div id="menu">
                 <nav>
                     <div class="nav-wrapper">
@@ -81,7 +81,7 @@
                 }
             });
             </script>
-        
+            -->
             <!-- Main Stuff -->
 			<div id="wrapper">
 
@@ -95,7 +95,100 @@
 						</ul>
 					</section>
                 
-                <!-- Projects -->
+                
+                
+                <section id="main" class = "main">
+                        <header>
+				            <h3>Tell me more about his...</h3>
+                    </header>
+                    
+                            <div class="categories">
+                          <ul class="cat">
+                            <li>
+                              <ol class="type">
+                                <li><a href="#" id = "mhack">Hackathons</a></li>
+                                <li><a href="#" id="mwork">Work Experience</a></li>
+                              </ol>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="row" id = "hack">
+                                <div class="col-sm-8 col-md-8 col-lg-8">
+                                    <div class="hover-bg"> <a href="https://devpost.com/software/ez-nav" title="Project description">
+                                        <div class="hover-text">
+                                        <h4>Ez Nav</h4>
+                                        <small>Smart/Optimal Travel Planning</small> </div>
+                              <img src="img/gallery.jpg" alt="Project Title"> </a> </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 work event">
+                                    <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Get Smart(er)</h4>
+                                            <small>Hackathon Project</small> 
+                                        </div>
+                                    <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> 
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-4 aaaa">
+                                    <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                        <h4>S(ECURE) AID</h4>
+                                        <small>Hackathon Project</small> </div>
+                                    <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 col-lg-12 psh">
+                                    <div class="hover-bg"> <a href="https://devpost.com/software/schoolcentre" title="Project description" rel="prettyPhoto">
+                              <div class="hover-text">
+                                <h4>School Center</h4>
+                                <small>Firebase/Google Calendar Based Organizer</small> </div>
+                              <img src="img/medium.png" class="img-responsive" alt="Project Title"> </a> </div>
+                                  </div>
+                        </div>
+                        <div class="row" id = "work">
+                        <section class="main items">
+                            <article class="item">
+                                <h4>Upper Canada College <br>(2012 - Present)</h4>
+                                <p>One of North America's top foremost boy's schools also an International Baccalaureate World School. Currently taking HL Math, ICS4U, CHW3M and SPH3U</p>
+                            </article>
+                            <article class="item">
+                                <h4>Olympiads School <br>(2016 - Present)</h4>
+                                <p>Olympiadss is a premier secondary education service, with many prestigious accolades. Currently taking AP Computer Science, Contest Coding Senior and English writing.</p>
+                            </article>
+                            <article class="item">
+                                <h4>University of Toronto DEEP <br>(2015 - 2017)</h4>
+                                <p>The Da Vinci Engineering Enrichment Program (DEEP) is designed for highly motivated high school students with an aptitude for science and math..</p>
+                            </article>
+                            <article class="item">
+                                    <h4>Toronto Hacker Club (2016-2017)</h4>
+                                    <p>As an event coordinator for TOHC, I helped
+                                    with the logistics for events including: Tech Night, Brain Browse and THacks 2. (listed bellow)</p>
+                                </article>
+                                <article class="item">
+                                    <h4>The Knowledge Society (Jan to Jun 2017)</h4>
+                                    <p>Learning as an innovator at TKS, I worked alongside other students in providing solutions to real world companies, earning an invitation to Air BNBs headquarters</p>
+                                </article>
+                        </section>
+                    </div>
+                    <script>
+                    document.getElementById("hack").style.display = "none";
+                    document.getElementById("work").style.display = "none";
+                        
+                    document.body.onmousedown = function() { 
+                        document.getElementById("mhack").onclick = function(){
+                            document.getElementById("hack").style.display = "inline";
+                            document.getElementById("work").style.display = "none";
+                        }
+                        document.getElementById("mwork").onclick = function(){
+                            document.getElementById("hack").style.display = "none";
+                            document.getElementById("work").style.display = "inline";
+                        }
+                    }
+                    
+                    </script>
+						
+				</section>
+
                 <section id = "pro">
                     <h2 class = "center">Projects</h2>
                         <div class="categories">
@@ -222,7 +315,7 @@
                               <img src="img/projects/ski.jpg" class="img-responsive" alt="Project Title"> </a> </div>
                           </div>
                         </div>
-                          <div class="col-sm-6 col-md-3 col-lg-3 res">
+                          <div class="col-sm-3 col-md-3 col-lg-3 res">
                           <div class="portfolio-item">
                             <div class="hover-bg"> <a href="https://www.facebook.com/DankLatinMemes/" title="Project description" rel="prettyPhoto">
                               <div class="hover-text">
