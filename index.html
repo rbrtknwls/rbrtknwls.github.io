@@ -4,552 +4,163 @@
 		<title>Robert Knowles</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="http://example.com/favicon.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/materialize.css">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/prettyPhoto.css">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        
-        
-        
 	</head>
+
+    <style>
+       /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
     
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-caption > h1 {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  overflow: hidden;
+  height: 40rem;
+  filter: brightness(50%);
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 1rem;
+  }
+}
+    </style>
 	<body>
         
-		<!-- Splash Page -->
-			<header id="header" class="alt">
-                
-                <!--- Trait Changing -->
-                
-                <script>
-                    var traits = ["Meme Page Admin", "Club Head", "Runner", " Front End Developer", " Self Declared Beat Saber Master", " Hackathon Organizer", " Latin Scholar","Swimmer", " Tired Guy", " HL Math Student", " \"Smart\" Dude - The Simon Guo"," Logistician" ]
-                    var colors = ['#33B5FF', '#33B5FF', '#33B5FF'];
-            
-                    function cycletext(n){
-                        var random_color = colors[Math.floor(Math.random() * colors.length)];
-                        setTimeout(function() {
-                             n = (n + 1)%traits.length;
-                            document.getElementById("trait").innerHTML = traits[n];
-                            cycletext(n);
-                        }, 2000);
-
-                    }
-                    cycletext(0);
-                </script>
-                
-				<div class="inner">
-					<h1>Robert Knowles</h1>
-					<p id = "trait"> Coder </p>
-				</div>
-			</header>
-        
-            <!-- Nav Bar -->
-            <!--
-            <div id="menu">
-                <nav>
-                    <div class="nav-wrapper">
-                      <ul class="right hide-on-med-and-down">
-                        <li><a href="#main">TL;DR</a></li>
-                        <li><a href="#">Education/Work</a></li>
-                        <li><a href="#pro">Projects</a></li>
-                        <li><a href="#">Recognition</a></li>
-                        <li><a href="#">Contact</a></li>
-                      </ul>
-                    </div>
-                </nav>
-            </div>
-        
-            <div id="screen2">
-            </div>
-            <script>
-            var menu =  document.querySelector('#menu');
-            var box =  document.querySelector('#screen2');
-            var boxPosition = box.getBoundingClientRect().top;
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset >= boxPosition-800) {
-                    menu.style.top = '0px';
-                } else {
-                    menu.style.top = 'calc(92%)';
-                }
-            });
-            </script>
-            -->
-            <!-- Main Stuff -->
-			<div id="wrapper">
-
-				<!-- TL;DR -->
-                <section id="main" class = "main">
-
-						<h2>TL;DR</h2>
-						<p>I'm a passionate sixteen-year-old student at Upper Canada College, <br> Who is hoping to apply my skills in real world scenarios. <br> I am currently focusing on Data Management, Algorithms and Robotics.</p>
-						<ul class="actions">
-							<li><a href="doc/RK_Resume.pdf" class="button big">Download My Resume</a></li>
-						</ul>
-					</section>
-                
-                
-                
-                <section id="main" class = "main">
-                        <header>
-				            <h3>Tell me more about his...</h3>
-                    </header>
-                    
-                            <div class="categories">
-                          <ul class="cat">
-                            <li>
-                              <ol class="type">
-                                <li><a href="#" id = "mhack">Hackathons</a></li>
-                                <li><a href="#" id="mwork">Work Experience</a></li>
-                              </ol>
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        <div class="row" id = "hack">
-                                <div class="col-sm-8 col-md-8 col-lg-8">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/ez-nav" title="Project description">
-                                        <div class="hover-text">
-                                        <h4>Ez Nav</h4>
-                                        <small>Smart/Optimal Travel Planning</small> </div>
-                              <img src="img/gallery.jpg" alt="Project Title"> </a> </div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4 work event">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Get Smart(er)</h4>
-                                            <small>Hackathon Project</small> 
-                                        </div>
-                                    <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> 
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4 aaaa">
-                                    <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                        <h4>S(ECURE) AID</h4>
-                                        <small>Hackathon Project</small> </div>
-                                    <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-12 psh">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/schoolcentre" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>School Center</h4>
-                                <small>Firebase/Google Calendar Based Organizer</small> </div>
-                              <img src="img/medium.png" class="img-responsive" alt="Project Title"> </a> </div>
-                                  </div>
-                        </div>
-                        <div class="row" id = "work">
-                        <section class="main items">
-                            <article class="item">
-                                <h4>Upper Canada College <br>(2012 - Present)</h4>
-                                <p>One of North America's top foremost boy's schools also an International Baccalaureate World School. Currently taking HL Math, ICS4U, CHW3M and SPH3U</p>
-                            </article>
-                            <article class="item">
-                                <h4>Olympiads School <br>(2016 - Present)</h4>
-                                <p>Olympiadss is a premier secondary education service, with many prestigious accolades. Currently taking AP Computer Science, Contest Coding Senior and English writing.</p>
-                            </article>
-                            <article class="item">
-                                <h4>University of Toronto DEEP <br>(2015 - 2017)</h4>
-                                <p>The Da Vinci Engineering Enrichment Program (DEEP) is designed for highly motivated high school students with an aptitude for science and math..</p>
-                            </article>
-                            <article class="item">
-                                    <h4>Toronto Hacker Club (2016-2017)</h4>
-                                    <p>As an event coordinator for TOHC, I helped
-                                    with the logistics for events including: Tech Night, Brain Browse and THacks 2. (listed bellow)</p>
-                                </article>
-                                <article class="item">
-                                    <h4>The Knowledge Society (Jan to Jun 2017)</h4>
-                                    <p>Learning as an innovator at TKS, I worked alongside other students in providing solutions to real world companies, earning an invitation to Air BNBs headquarters</p>
-                                </article>
-                        </section>
-                    </div>
-                    <script>
-                    document.getElementById("hack").style.display = "none";
-                    document.getElementById("work").style.display = "none";
-                        
-                    document.body.onmousedown = function() { 
-                        document.getElementById("mhack").onclick = function(){
-                            document.getElementById("hack").style.display = "inline";
-                            document.getElementById("work").style.display = "none";
-                        }
-                        document.getElementById("mwork").onclick = function(){
-                            document.getElementById("hack").style.display = "none";
-                            document.getElementById("work").style.display = "inline";
-                        }
-                    }
-                    
-                    </script>
-						
-				</section>
-
-                <section id = "pro">
-                    <h2 class = "center">Projects</h2>
-                        <div class="categories">
-                          <ul class="cat">
-                            <li>
-                              <ol class="type">
-                                <li><a href="#" data-filter="*" class="active">All</a></li>
-                                <li><a href="#" data-filter=".hack">Hackathon</a></li>
-                                <li><a href="#" data-filter=".work">Work</a></li>
-                                <li><a href="#" data-filter=".event">Event Hosting</a></li>
-                                <li><a href="#" data-filter=".res">Side Projects</a></li>
-                              </ol>
-                            </li>
-                          </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="row">
-                      <div class="portfolio-items">
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Get Smart(er)</h4>
-                                <small>Hackathon Project</small> </div>
-                              <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://worldaffairs.ucc.on.ca/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>World Affairs Conference</h4>
-                                <small>Head of Technology</small> </div>
-                              <img src="img/projects/wlogo.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>S(ECURE) AID</h4>
-                                <small>Hackathon Project</small> </div>
-                              <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://drive.google.com/file/d/1iqU-cFzAlFy98lTBdQYt-valzvY8Rhue/view?usp=sharing" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Death of Democracy</h4>
-                                <small>Latin Research Essay</small> </div>
-                              <img src="img/projects/latinIA.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 event hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://thacks.tech/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>THacks 2</h4>
-                                <small>Hackathon Organizing</small> </div>
-                              <img src="img/projects/thacks.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://torontohacker.club/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Toronto Hacker Club</h4>
-                                <small>Logistics Team</small> </div>
-                              <img src="img/projects/tohc.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Tech Night</h4>
-                                <small>Youth Outreach Organizing</small> </div>
-                              <img src="img/projects/tnight.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/events/1753044898045337/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Brain Browse</h4>
-                                <small>Conference Organizing</small> </div>
-                              <img src="img/projects/bbrowse.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Algorithmic Workspace</h4>
-                                <small>Outdated Algorithmic Code Storage</small> </div>
-                              <img src="img/projects/algo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/schoolcentre" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>School Center</h4>
-                                <small>Firebase/Google Calendar Based Organizer</small> </div>
-                              <img src="img/medium.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/ez-nav" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Ez Nav</h4>
-                                <small>Smart/Optimal Travel Planning</small> </div>
-                              <img src="img/gallery.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Project Archive</h4>
-                                <small>Finished Games and Activites</small> </div>
-                              <img src="img/projects/ski.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                          <div class="col-sm-3 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/DankLatinMemes/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Dank Latin Memes</h4>
-                                <small>Founder of a Meme Page with 18k likes</small> </div>
-                              <img src="img/projects/dlm.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        
-                          
-                    </div>
-                </div>
-                    
-                
-                      
-                    
-                    
-                </section>
-				<!-- Experience 
-                    <section id="main" class="main">
-                        <header>
-                            <h2>Work / Internships</h2>
-                        </header>
-                            <section class="main items">
-                                <article class="item">
-                                    <h4>Toronto Hacker Club (2016-2017)</h4>
-                                    <p>As an event coordinator for TOHC, I helped
-                                    with the logistics for events including: Tech Night, Brain Browse and THacks 2. (listed bellow)</p>
-                                </article>
-                                <article class="item">
-                                    <h4>The Knowledge Society (Jan to Jun 2017)</h4>
-                                    <p>Learning as an innovator at TKS, I worked alongside other students in providing solutions to real world companies, earning an invitation to Air BNBs headquarters</p>
-                                </article>
-                            </section>
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
     
-                            <article class="item">
-                                <header>
-                                    <a href="http://thacks.tech/"><img src="images/thacks2.png" alt="" /></a>
-                                <h2>THacks 2</h2>
-                                </header>
-                                <p>THacks 2 is Toronto's premier hackathon for learning, building and innovation. Held at the University of Toronto, the event features a jam-packed, 24-hour lineup of workshops, speakers and competition. At the end of weekend, teams of hackers will pitch their projects and compete for incredible prizes. </p>
-                            </article>
-                            <section class="main items">
-                                <article class="item">
-                                    <header>
-                                        <a href="http://torontohacker.club/"><img src="images/tnight.png" alt="" /></a>
-                                        <h3>Tech Night</h3>
-                                    </header>
-                                    <p>Designed much like Toronto Hacker Club’s other events, Tech Night is a beginner-friendly, hands-on, exciting event made especially for children aged 6 to 12 years old.</p>
-                                    <ul class="actions">
-                                    </ul>
-                                </article>
+        <style>
+            .card{
+                margin-left: 5%;
+                margin-right: 5%;
+                border-color: black;
+                border-width: medium;
+            }
+        </style>
+        
+		<div id = "lmao" class="card">
 
-                                <article class="item">
-                                    <header>
-                                        <a href="http://torontohacker.club/"><img src="images/bbrowse.png" alt="" /></a>
-                                        <h3>Brain Browse</h3>
-                                    </header>
-                                    <p>Exploring cutting-edge neuroscience and neurotechnology, Toronto Hacker Club and NeuroTechTO present you with our latest event, BrainBrowse.</p>
-                                </article>
-                            </section>
-                        </section>
-                        <section id="main" class="main">
-                        <header>
-                            <h2>Education</h2>
-                        </header>
-                        <section class="main items">
-                            <article class="item">
-                                <h4>Upper Canada College <br>(2012 - Present)</h4>
-                                <p>One of North America's top foremost boy's schools also an International Baccalaureate World School. Currently taking HL Math, ICS4U, CHW3M and SPH3U</p>
-                            </article>
-                            <article class="item">
-                                <h4>Olympiads School <br>(2016 - Present)</h4>
-                                <p>Olympiadss is a premier secondary education service, with many prestigious accolades. Currently taking AP Computer Science, Contest Coding Senior and English writing.</p>
-                            </article>
-                            <article class="item">
-                                <h4>University of Toronto DEEP <br>(2015 - 2017)</h4>
-                                <p>The Da Vinci Engineering Enrichment Program (DEEP) is designed for highly motivated high school students with an aptitude for science and math..</p>
-                            </article>
-                        </section>
-                    </section>
-           
+                <h1>my pp hurt</h1>
+            
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 
-                    <section id="main" class="main">
-						<header>
-							<h2>Repositories & Projects</h2>
-						</header>
-                        <section class="main items">
-                            <article class="item">
-                                <header>
-                                    <a onclick = "CCCOn()"><img src="images/ccc.jpg" alt="" /></a>
-                                    <h3>CCC Workspace</h3>
-                                </header>
-                                <div id="CCCOverlay" onclick="CCCOff()">
-                                    <section id="overtxt" class="main">
-                                        <h2>CCC Workspace;</h2>
-                                        <p>A repository where I store solutions to past CCC problems (averaging S3-S4 problems), generally solved in Python or C++ and sometimes Java. </p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/rbrtknwls/CCC_Solutions" class = "button">Github</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function CCCOn() {
-                                    document.getElementById("CCCOverlay").style.display = "block";
-                                }
-
-                                function CCCOff() {
-                                    document.getElementById("CCCOverlay").style.display = "none";
-                                }
-                                </script>
-                                
-                            </article>
-                            <article class="item">
-                                <header>
-                                    <a onclick = "WACOn()"><img src="images/WAC.svg" alt="" /></a>
-                                    <h3>World Affairs Conference 2018</h3>
-                                </header>
-                                <div id="WACOverlay" onclick="WACOff()">
-                                    <section id="overtxt" class="main">
-
-                                        <h2>World Affairs Conference 2017-2019;</h2>
-                                        <p>The World Affairs Conference (WAC) is Canada's oldest annual student-run current affairs conference hosted at Upper Canada College.</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/worldaffairsconference/world.ac" class = "button">Github</a></li>
-                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">Website</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function WACOn() {
-                                    document.getElementById("WACOverlay").style.display = "block";
-                                }
-
-                                function WACOff() {
-                                    document.getElementById("WACOverlay").style.display = "none";
-                                }
-                                </script>
-                            
-                                
-                            </article>
-                            <article class="item">
-                                <header>
-                                    <a onclick = SkiOn()><img src="images/sking.jpg" alt="" /></a>
-                                    <h3>2.5D Skiing Game</h3>
-                                </header>
-                                <div id="SkiOverlay" onclick="SkiOff()">
-                                    
-                                    <section id="overtxt" class="main">
-
-                                        <h2>Ski Game;</h2>
-                                        <p>A simple 2.5D skiing game, made for the OLPC (port instructions inside), made for my ICS3U Class using built in python graphics and basic math</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://docs.google.com/presentation/d/1qhYZ2ZeF8jQaPckfk7AfHFfW5u4tbtIhVXrwpkXMsac/edit?usp=sharing" class="button">Process</a></li>
-                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">V 1.1</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function SkiOn() {
-                                    document.getElementById("SkiOverlay").style.display = "block";
-                                }
-
-                                function SkiOff() {
-                                    document.getElementById("SkiOverlay").style.display = "none";
-                                }
-                                </script>
-                            </article>
-                            
-                            <article class="item">
-                                <header>
-                                    <a onclick = "AlgoOn()"><img src="images/algo.jpg" alt="" /></a>
-                                    <h3>Algorithm Misc</h3>
-                                </header>
-                                <div id="AlgoOverlay" onclick="AlgoOff()">
-                                    
-                                    <section id="overtxt" class="main">
-
-                                        <h2>Algorithm Misc;</h2>
-                                        <p>A miscellaneous header for my other contest/algorithm workplaces, and some work for some of my ICS4U class</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/rbrtknwls/Project-Euler" class="button">Euler</a></li>
-                                            <li><a href="https://github.com/rbrtknwls/ICS4U-Game" class="button">ICS4U</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function AlgoOn() {
-                                    document.getElementById("AlgoOverlay").style.display = "block";
-                                }
-
-                                function AlgoOff() {
-                                    document.getElementById("AlgoOverlay").style.display = "none";
-                                }
-                            </script>
-                            </article>
-                            
-                        </section>
-                        -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
                 
+            <div class="carousel-inner">
                 
-				
-				
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/profile.php?id=100012932622555" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/rbrtknwls" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/robbie-knowles/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:robbie.knowles@ucc.on.ca" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</footer>
-
-			</div>
+              <div class="carousel-item active">
+                <img src = "img/hackathons.png" width="100%" height="100%" focusable="false" role="img">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="carousel-item">
+                <img src = "img/research.png" width="100%" height="100%" focusable="false" role="img">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-success" href="#" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="carousel-item">
+                <img src = "img/coding.jpg" width="100%" height="100%" focusable="false" role="img">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-lg btn-danger" onclick="TurnAllRed()" role="button">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
 
 		<!-- Scripts -->
-        <script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
-                <script type="text/javascript" src="assets/js/easypiechart.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.isotope.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.counterup.js"></script> 
-        <script type="text/javascript" src="assets/js/waypoints.js"></script> 
-        <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script> 
-        <script type="text/javascript" src="assets/js/main.js"></script>
-
+        <script>
+            function TurnAllRed() {
+                document.getElementById("lmao").style.borderColor = "red";
+            }
+</script>
 	</body>
 </html>
