@@ -40,17 +40,28 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  border-color: red;
-  border-width: medium;
+  border-width: 1px;
+  background-color: #ffcccb;
+}
+
+.card-title{
+    font-size: 50px;
+    text-align: center;
 }
 
 .opening{
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 15%;
   
 }
 
-.opening > h1{
+#themenum{
+  color: #F08080;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.col > h1{
     
   font-size: 180px;
   margin-bottom: 3%;
@@ -61,7 +72,7 @@
   -o-animation: fadein 1s; 
 }
 
-.opening > h2, hr{
+.col > h2, hr{
   font-size: 100px;
   animation: fadein 4s;
   -moz-animation: fadein 4s; /* Firefox */
