@@ -1,3 +1,5 @@
+
+
 var text = ["Websites", "Applets", "Solutions", "Registration Systems", "Data Parsers", "Calculators", "Games", "Simulations"];
 var counter = 1;
 var elem = document.getElementById("fluxtext");
@@ -11,3 +13,5 @@ function change() {
     // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
+
+
