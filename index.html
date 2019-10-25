@@ -17,16 +17,22 @@
     <!-- Theming -->
     
     <style>
+
         
-        body {
+        .card{
+            border-color: black;
+        }
+        #red {
           background-image: url(img/valc.png), url(img/start.png), url(img/scroll.png);
           background-repeat: no-repeat, no-repeat, repeat;
           background-position: bottom, top, top;
           margin-top: 0%;
         }
-        
-        .card{
-            border-color: black;
+        #blue{
+          background-image: url(img/botblue.png), url(img/topbl.png), url(img/scrollb.png);
+          background-repeat: no-repeat, no-repeat, repeat;
+          background-position: bottom, top, top;
+          margin-top: 0%;
         }
     </style>
     
@@ -34,7 +40,7 @@
 	<body>
         
         <!-- Splash Screen -->
-
+    <div id = "start">
         <div class="opening">
             <div class = "col">
                 <div class = "row">
@@ -42,11 +48,11 @@
                         <h1>Hey, </h1>
                     </div>
                 </div>
-                <h2> I'm <span class = "redbol">Robbie Knowles</span></h2>
+                <h2> I'm <span id = "1">Robbie Knowles</span></h2>
                 <hr style = "width: 60%; margin-left: 0px; border: 1px solid">
                 <div class = "row">
-                    <h3 id = "fill"> (And I love to <span class = "redbol">code</span>! I make alot of stuff, like: </h3>
-                    <h3 id = "fluxtext" style="margin-left: 6px"> Websites</h3>
+                    <h3 id = "fill"> (And I love to <span id = "2"></span> I make alot of stuff, like: </h3>
+                    <h3 id = "st" style="margin-left: 6px"> Websites</h3>
                     <h3 id = "fill" style="margin-left: 0%">)</h3>
                 </div>
                 <div id="changeText"></div>
@@ -55,20 +61,20 @@
         
         <!-- About me -->
         
-        <div class="card">
+        <div class="card" id = "descred">
           <div class="row no-gutters">
             <div class="col-md-5">
-              <img src="img/program.png" style = "border-top-right-radius: 0;border-bottom-right-radius: 0 "class="card-img" alt="...">
+              <img id = "cov" src="img/program.png" style = "border-top-right-radius: 0;border-bottom-right-radius: 0 "class="card-img" alt="...">
             </div>
             <div class="col-md-7">
                 <div class="card-header">
-                    <h5 class="card-title"><span class = "redbol">About Me</span></h5>
+                    <h5 class="card-title"><span id = "3">About Me</span></h5>
                   </div>
               <div class="card-body">
-                <p> I am a <span id = "year">17</span> year old student, <span class = "redbol">coder</span> and hacker! My main interest is tackling problems that I find interesting and to optimize already existing solutions to problems. I love doing <span class = "redbol">coding contests</span>* and hackathons**, I also have a ton of cool side projects. I am currently at Upper Canada College in the International Baccalaureate, where I do Varisty Swim and Varisty Cross Country, while I also run my own club and act as the <span class="redbol">Head of Technology</span> for the World Affairs Conference.</p>
+                  <p> I am a <span id = "year">17</span> year old <span id = "8">student</span>, <span id = "4">coder</span> and hacker! My main interest is tackling problems that I find interesting and to optimize already existing solutions to problems. I love doing <span id = "5">coding contests</span>* and hackathons**, I also have a ton of cool side projects. I am currently at <span id = "9">Upper Canada College</span> in the International Baccalaureate, where I do <span id = "10">Varisty Swim</span> and <span id = "11">Varisty Cross Country</span>, while I also run my own club and act as the <span id="6">Head of Technology</span> for the World Affairs Conference.</p>
                   
                 <p style="text-align: center;margin-top: 7%; font-weight: bold"> I am looking for a job over the summer of 2020, so feel free to contact me about such!</p>
-                <p style="text-align:center; margin-bottom: 10%"><a class="btn btn-lg btn-danger" href="doc/RK_Resume.pdf" role="button"><i class="fa fa-download fa"></i> Download My Resume</a></p>
+                <p style="text-align:center; margin-bottom: 10%"><a id = "butt" href="doc/RK_Resume.pdf" role="button"><i class="fa fa-download fa"></i> Download My Resume</a></p>
                 <p style="margin-bottom: 0"><small class="text-muted">* 7 as of 13/11/19 </small></p>
                 <p style="margin-top: 0"><small class="text-muted">** 5 as of 13/11/19 </small></p>
                   
@@ -96,7 +102,7 @@
         
         <!-- Buffer Title -->
         
-        <div class="card" style="margin-bottom: 1%">
+        <div class="card" style="margin-bottom: 1%" id = "Workt">
             <div class="card-header">
                 <h5 class="card-title"><span class = "redbol">Work Experince</span></h5>
             </div>
@@ -106,7 +112,7 @@
         <!-- WAC shiz -->
         
         
-        <div class="card" style="border: 0px;">
+        <div class="card" style="border: 0px;" id = "Work">
             <div class="card" style="margin: 0; border: 0px">
               <a href="https://www.ucc.on.ca/student-life/activities/world-affairs-conference"><img src="img/wac.png" class="card-img" alt="..."></a>
               <div class="card-body">
@@ -158,7 +164,7 @@
         <!-- TOHC shiz -->
         
         
-        <div class="card" style="border: 0px solid">
+        <div class="card" style="border: 0px solid" id = "TOHC">
               <a href="http://torontohacker.club/"><img src="img/tohc.png" class="card-img" alt="..."></a>
               <div class="card-body">
                   <p class="card-text">In 2016-2017, I worked at <span class = "redbol"> Toronto Hacker Club </span> (also known as <span class = "redbol"> TOHC </span>). I was offered a job as an event coordinator and worked on their logistics team, while also doing some very limited front end development. Below are some of the events I helped organize (and in the case of THacks 2, I also mentored at).</p>
@@ -196,60 +202,51 @@
         
         <!-- Buffer Title -->
         
-        <div class="card" style="margin-bottom: 1%">
+        <div class="card" style="margin-bottom: 1%" id = "gamet">
             <div class="card-header">
-                <h5 class="card-title"><span class = "redbol">Video Games</span></h5>
+                <h5 class="card-title"><span class = "redbol">Video Game(s)</span></h5>
             </div>
         </div>
         
         <!-- Game/Sample -->
         
-        <div class="card">
-            <div class = "card" style="border: 0; margin: 0"> 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#" data-toggle="collapse" data-target="#c" aria-expanded="true" aria-controls="c"><span class = "redbol">Contest</span></a>
-                  <a class="nav-item nav-link" href="#" data-toggle="collapse" data-target="#school" aria-expanded="false" aria-controls="school"><span class = "redbol">School</span></a>
+        <div class="card" id = "game">
+            <div style = "margin: 2%; margin-bottom: 0;"class="alert alert-danger alert-dismissible fade show" role="alert">
+                      For the sake of my sanity, I will not be converting the majority of my games into Javascript so they can be on my website... As many of my games are built with Python, C++ or Java! However for my ISC4U Class I made a version of pong that uses Javascript, that you can play below.
+                        <hr>
+                    <strong>However</strong>, they are all still on my Github. Maybe in the future (when my university applications are done) I will port them!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+            <div class="card" style="margin: 0; border: 0">
+                <div id="c" class="collapse show" aria-labelledby="c" data-parent="#awards">
+                  <div class="card-body">
+                    <style>
+                        canvas { background: #eee; }
+                    </style>
+
+                    <canvas id="pongcanv" width = "1250" height="600"></canvas>
+                    <p class = "text-center" style="margin-top: 1%"><a class="btn btn-lg btn-danger" onclick="startpong()" role="button">Start Game</a></p>
+                  </div>
                 </div>
               </div>
-            </nav>
-            </div>
-            <div class="accordion" id="awards" style = "margin: 0">
-                <div class="card" style="margin: 0; border: 0">
-                    <div id="c" class="collapse show" aria-labelledby="c" data-parent="#awards">
-                      <div class="card-body">
-                        <style>
-                            canvas { background: #eee; }
-                        </style>
-                        
-                        <canvas id="myCanvas" width = "1250" height="600"></canvas>
-                        <p class = "text-center" style="margin-top: 1%"><a class="btn btn-lg btn-danger" onclick="play()" role="button">Start Game</a></p>
-                      </div>
-                    </div>
-                  </div>
                 
                 
-                  <div class="card" style="margin: 0; border: 0">
-                    <div id="school" class="collapse" aria-labelledby="school" data-parent="#awards">
-                      <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  
+        
             </div>
         
         <!-- Buffer Title -->
         
-        <div class="card" style="margin-bottom: 1%">
+        <div class="card" style="margin-bottom: 1%" id = "awardst">
             <div class="card-header">
                 <h5 class="card-title"><span class = "redbol">Awards/Prizes</span></h5>
             </div>
         </div>
         
         <!-- Awards and Contest Coding -->
-        <div class="card">
+        <div class="card" id = "awards">
             <div class="row no-gutters">
                 <div class="col-md-8">
                   <div class="text-center" style="margin-top: 2%">
@@ -289,7 +286,7 @@
         
         <div class="card" style="margin-bottom: 1%">
             <div class="card-header">
-                <h5 class="card-title"><span class = "redbol">Learn More About My:</span></h5>
+                <h5 class="card-title"><span id = "7">Learn More About My:</span></h5>
             </div>
         </div>
         
@@ -315,7 +312,7 @@
                       <div class="carousel-caption">
                         <span class = "lightblue" style="font-weight: bold"><h1>Hackathons</h1></span>
                           <p>Learn more about my projects at different <span class = "lightblue">hackathons</span>; I tackled issues ranging from finding the <span class = "lightblue">optimum amount of sleep</span> to how to making a <span class = "lightblue">class organizer</span> and <span class = "lightblue">more</span>! </p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        <p><a class="btn btn-lg btn-primary" onclick="buttpressblue()" role="button">Learn more</a></p>
                       </div>
                     </div>
                   </div>
@@ -328,7 +325,7 @@
                       <div class="carousel-caption">
                         <span class = "lightgreen" style="font-weight: bold"><h1>Research & Papers</h1></span>
                         <p>Learn more about my more <span class = "lightgreen">academic experiences</span>: From my papers for the <span class = "lightgreen">International Baccalaureate</span>, to my research at <span class = "lightgreen">Carlton's SCSI</span> program and all my other educational experiences. </p>
-                        <p><a class="btn btn-lg btn-success" href="#" role="button">Go To</a></p>
+                        <p><a class="btn btn-lg btn-success" role="button">Go To</a></p>
                       </div>
                     </div>
                   </div>
@@ -341,7 +338,7 @@
                       <div class="carousel-caption">
                         <span class = "lightred" style="font-weight: bold"><h1>Programming</h1></span>
                           <p>Learn more about my front end and back end <span class = "lightred">coding</span> experiences: From my work in designing <span class = "lightred">registration systems</span>, to my participation in <span class = "lightred">coding contests</span> and all my other coding experiences!
-                        <p><a class="btn btn-lg btn-danger" onclick="TurnAllRed()" role="button">Go To</a></p>
+                        <p><a class="btn btn-lg btn-danger" onclick="buttpressred()" role="button">Go To</a></p>
                       </div>
                     </div>
                   </div>
@@ -407,28 +404,26 @@
             
             
              <!-- Footer -->
-            <hr class="my-3" style = "width: 20%; border: 1px solid; color: red">
+            <hr id = "bar" class="my-3" style = "width: 20%; border: 1px solid; color: red">
             <ul class="list-group list-group-horizontal-lg justify-content-md-center">
-              <a href="https://github.com/rbrtknwls" style="margin-right: 1%"><i class="fa fa-github fa-2x" style="color: red"></i></a>
-              <a href="https://www.instagram.com/robbie.knowles/?hl=en" style="margin-right: 1%"><i class="fa fa-instagram fa-2x" style="color: red"></i></a>
-              <a href="https://www.linkedin.com/in/robbie-knowles/"><i class="fa fa-linkedin fa-2x" style="color: red"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=100012932622555" style="margin-left: 1%"><i class="fa fa-facebook fa-2x" style="color: red"></i></a>
-              <a href="https://devpost.com/rbrtknwls?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" style="margin-left: 1%"><i class="fa fa-code fa-2x" style="color: red"></i></a>
+              <a href="https://github.com/rbrtknwls" style="margin-right: 1%"><i id = "git" class="fa fa-github fa-2x" style="color: red"></i></a>
+              <a href="https://www.instagram.com/robbie.knowles/?hl=en" style="margin-right: 1%"><i id = "ins" class="fa fa-instagram fa-2x" style="color: red"></i></a>
+              <a href="https://www.linkedin.com/in/robbie-knowles/"><i id = "lin" class="fa fa-linkedin fa-2x" style="color: red"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100012932622555" style="margin-left: 1%"><i id = "fac" class="fa fa-facebook fa-2x" style="color: red"></i></a>
+              <a href="https://devpost.com/rbrtknwls?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" style="margin-left: 1%"><i id = "cod" class="fa fa-code fa-2x" style="color: red"></i></a>
             </ul>
             <br>
 
           </div>
+        </div>
         
         
 		<!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
         <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        <script>
-            function TurnAllRed() {
-                document.getElementById("lmao").style.borderColor = "red";
-            }
-</script>
+        <script src="assets/js/script.js"></script>
+        
+        
 	</body>
 </html>
