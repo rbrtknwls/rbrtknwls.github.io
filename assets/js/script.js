@@ -38,6 +38,8 @@ function alloff(){
     for (var i = 0; i < highlighall.length; i++){
         document.getElementById(highlighall[i]).className = "null";
     }
+    
+    //red
     document.getElementById("awardst").style.display = "none";
     document.getElementById("awards").style.display = "none";
     
@@ -47,6 +49,12 @@ function alloff(){
     document.getElementById("Workt").style.display = "none";
     document.getElementById("Work").style.display = "none";
     document.getElementById("TOHC").style.display = "none";
+    
+    //blue
+    document.getElementById("paperst").style.display = "none";
+    document.getElementById("research").style.display = "none";
+    document.getElementById("EE").style.display = "none";
+    
 }
 
 function turnred() {
@@ -87,6 +95,16 @@ function turnblue() {
     alloff();
     document.getElementById(curr).id = "blue";
     curr = "blue";
+    
+    
+    document.getElementById("paperst").style.display = "block";
+    document.getElementById("research").style.display = "block";
+    document.getElementById("EE").style.display = "block";
+    
+    
+    
+    
+    
     
     var highlighb = ["1","2","3","8","7","9","10","11"];
     for (var i = 0; i < highlighb.length; i++){
