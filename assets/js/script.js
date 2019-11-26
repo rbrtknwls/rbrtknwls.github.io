@@ -113,7 +113,7 @@ function turnblue() {
     }
     document.getElementById("2").innerHTML = "learn!";
     
-    document.getElementById("cov").src = "img/learnp.png";
+    document.getElementById("cov").src = "img/cover2.png";
     
     text = ["Research Papers", "Extended Essays", "Independent Assessments", "Math Proofs", "Latin Explorations", "Physics/Chem Labs", "Science Write Ups"];
     
