@@ -9,7 +9,9 @@ highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 
 function start(){
     var val = Math.random();
-    if (val <= 0.6){
+    
+    //--- PERMA LOCK TO KEEP RED
+    if (val <= 1){
         turnred();
         
         document.getElementById(currflex).id = "fluxtextr";
