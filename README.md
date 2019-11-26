@@ -1,3 +1,2 @@
 # rbrtknwls.github.io
-My online CV....
-Give me some time and it will be sicckkkk
+
