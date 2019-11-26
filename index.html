@@ -1,555 +1,533 @@
 <!DOCTYPE HTML>
 <html>
+    
+    <!-- Metaish Data -->
+    
 	<head>
 		<title>Robert Knowles</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="http://example.com/favicon.png">
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/materialize.css">
+        <meta name="referrer" content="origin">
+		
         <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/css/prettyPhoto.css">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        
-        
-        
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+    
+    <!-- Theming -->
+    
+    <style>
+
+        
+        .card{
+            border-color: black;
+        }
+        #red {
+          background-image: url(img/valc.png), url(img/start.png), url(img/scroll.png);
+          background-repeat: no-repeat, no-repeat, repeat;
+          background-position: bottom, top, top;
+          margin-top: 0%;
+        }
+        #blue{
+          background-image: url(img/botblue.png), url(img/topbl.png), url(img/scrollb.png);
+          background-repeat: no-repeat, no-repeat, repeat;
+          background-position: bottom, top, top;
+          margin-top: 0%;
+        }
+    </style>
+    
     
 	<body>
         
-		<!-- Splash Page -->
-			<header id="header" class="alt">
-                
-                <!--- Trait Changing -->
-                
-                <script>
-                    var traits = ["Meme Page Admin", "Club Head", "Runner", " Front End Developer", " Self Declared Beat Saber Master", " Hackathon Organizer", " Latin Scholar","Swimmer", " Tired Guy", " HL Math Student", " \"Smart\" Dude - The Simon Guo"," Logistician" ]
-                    var colors = ['#33B5FF', '#33B5FF', '#33B5FF'];
-            
-                    function cycletext(n){
-                        var random_color = colors[Math.floor(Math.random() * colors.length)];
-                        setTimeout(function() {
-                             n = (n + 1)%traits.length;
-                            document.getElementById("trait").innerHTML = traits[n];
-                            cycletext(n);
-                        }, 2000);
-
-                    }
-                    cycletext(0);
-                </script>
-                
-				<div class="inner">
-					<h1>Robert Knowles</h1>
-					<p id = "trait"> Coder </p>
-				</div>
-			</header>
-        
-            <!-- Nav Bar -->
-            <!--
-            <div id="menu">
-                <nav>
-                    <div class="nav-wrapper">
-                      <ul class="right hide-on-med-and-down">
-                        <li><a href="#main">TL;DR</a></li>
-                        <li><a href="#">Education/Work</a></li>
-                        <li><a href="#pro">Projects</a></li>
-                        <li><a href="#">Recognition</a></li>
-                        <li><a href="#">Contact</a></li>
-                      </ul>
-                    </div>
-                </nav>
-            </div>
-        
-            <div id="screen2">
-            </div>
-            <script>
-            var menu =  document.querySelector('#menu');
-            var box =  document.querySelector('#screen2');
-            var boxPosition = box.getBoundingClientRect().top;
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset >= boxPosition-800) {
-                    menu.style.top = '0px';
-                } else {
-                    menu.style.top = 'calc(92%)';
-                }
-            });
-            </script>
-            -->
-            <!-- Main Stuff -->
-			<div id="wrapper">
-
-				<!-- TL;DR -->
-                <section id="main" class = "main">
-
-						<h2>TL;DR</h2>
-						<p>I'm a passionate sixteen-year-old student at Upper Canada College, <br> Who is hoping to apply my skills in real world scenarios. <br> I am currently focusing on Data Management, Algorithms and Robotics.</p>
-						<ul class="actions">
-							<li><a href="doc/RK_Resume.pdf" class="button big">Download My Resume</a></li>
-						</ul>
-					</section>
-                
-                
-                
-                <section id="main" class = "main">
-                        <header>
-				            <h3>Tell me more about his...</h3>
-                    </header>
-                    
-                            <div class="categories">
-                          <ul class="cat">
-                            <li>
-                              <ol class="type">
-                                <li><a href="#" id = "mhack">Hackathons</a></li>
-                                <li><a href="#" id="mwork">Work Experience</a></li>
-                              </ol>
-                            </li>
-                          </ul>
-                        </div>
-                        
-                        <div class="row" id = "hack">
-                                <div class="col-sm-8 col-md-8 col-lg-8">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/ez-nav" title="Project description">
-                                        <div class="hover-text">
-                                        <h4>Ez Nav</h4>
-                                        <small>Smart/Optimal Travel Planning</small> </div>
-                              <img src="img/gallery.jpg" alt="Project Title"> </a> </div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4 work event">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                            <h4>Get Smart(er)</h4>
-                                            <small>Hackathon Project</small> 
-                                        </div>
-                                    <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> 
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4 aaaa">
-                                    <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
-                                        <div class="hover-text">
-                                        <h4>S(ECURE) AID</h4>
-                                        <small>Hackathon Project</small> </div>
-                                    <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-12 psh">
-                                    <div class="hover-bg"> <a href="https://devpost.com/software/schoolcentre" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>School Center</h4>
-                                <small>Firebase/Google Calendar Based Organizer</small> </div>
-                              <img src="img/medium.png" class="img-responsive" alt="Project Title"> </a> </div>
-                                  </div>
-                        </div>
-                        <div class="row" id = "work">
-                        <section class="main items">
-                            <article class="item">
-                                <h4>Upper Canada College <br>(2012 - Present)</h4>
-                                <p>One of North America's top foremost boy's schools also an International Baccalaureate World School. Currently taking HL Math, ICS4U, CHW3M and SPH3U</p>
-                            </article>
-                            <article class="item">
-                                <h4>Olympiads School <br>(2016 - Present)</h4>
-                                <p>Olympiadss is a premier secondary education service, with many prestigious accolades. Currently taking AP Computer Science, Contest Coding Senior and English writing.</p>
-                            </article>
-                            <article class="item">
-                                <h4>University of Toronto DEEP <br>(2015 - 2017)</h4>
-                                <p>The Da Vinci Engineering Enrichment Program (DEEP) is designed for highly motivated high school students with an aptitude for science and math..</p>
-                            </article>
-                            <article class="item">
-                                    <h4>Toronto Hacker Club (2016-2017)</h4>
-                                    <p>As an event coordinator for TOHC, I helped
-                                    with the logistics for events including: Tech Night, Brain Browse and THacks 2. (listed bellow)</p>
-                                </article>
-                                <article class="item">
-                                    <h4>The Knowledge Society (Jan to Jun 2017)</h4>
-                                    <p>Learning as an innovator at TKS, I worked alongside other students in providing solutions to real world companies, earning an invitation to Air BNBs headquarters</p>
-                                </article>
-                        </section>
-                    </div>
-                    <script>
-                    document.getElementById("hack").style.display = "none";
-                    document.getElementById("work").style.display = "none";
-                        
-                    document.body.onmousedown = function() { 
-                        document.getElementById("mhack").onclick = function(){
-                            document.getElementById("hack").style.display = "inline";
-                            document.getElementById("work").style.display = "none";
-                        }
-                        document.getElementById("mwork").onclick = function(){
-                            document.getElementById("hack").style.display = "none";
-                            document.getElementById("work").style.display = "inline";
-                        }
-                    }
-                    
-                    </script>
-						
-				</section>
-
-                <section id = "pro">
-                    <h2 class = "center">Projects</h2>
-                        <div class="categories">
-                          <ul class="cat">
-                            <li>
-                              <ol class="type">
-                                <li><a href="#" data-filter="*" class="active">All</a></li>
-                                <li><a href="#" data-filter=".hack">Hackathon</a></li>
-                                <li><a href="#" data-filter=".work">Work</a></li>
-                                <li><a href="#" data-filter=".event">Event Hosting</a></li>
-                                <li><a href="#" data-filter=".res">Side Projects</a></li>
-                              </ol>
-                            </li>
-                          </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="row">
-                      <div class="portfolio-items">
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/get-smart-er-c6kf8j" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Get Smart(er)</h4>
-                                <small>Hackathon Project</small> </div>
-                              <img src="img/projects/scalc.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://worldaffairs.ucc.on.ca/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>World Affairs Conference</h4>
-                                <small>Head of Technology</small> </div>
-                              <img src="img/projects/wlogo.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://yodasnow.github.io/BLGHackForChange/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>S(ECURE) AID</h4>
-                                <small>Hackathon Project</small> </div>
-                              <img src="img/projects/siad.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://drive.google.com/file/d/1iqU-cFzAlFy98lTBdQYt-valzvY8Rhue/view?usp=sharing" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Death of Democracy</h4>
-                                <small>Latin Research Essay</small> </div>
-                              <img src="img/projects/latinIA.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 event hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://thacks.tech/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>THacks 2</h4>
-                                <small>Hackathon Organizing</small> </div>
-                              <img src="img/projects/thacks.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="http://torontohacker.club/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Toronto Hacker Club</h4>
-                                <small>Logistics Team</small> </div>
-                              <img src="img/projects/tohc.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Tech Night</h4>
-                                <small>Youth Outreach Organizing</small> </div>
-                              <img src="img/projects/tnight.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 work event">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/events/1753044898045337/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Brain Browse</h4>
-                                <small>Conference Organizing</small> </div>
-                              <img src="img/projects/bbrowse.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Algorithmic Workspace</h4>
-                                <small>Outdated Algorithmic Code Storage</small> </div>
-                              <img src="img/projects/algo.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/schoolcentre" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>School Center</h4>
-                                <small>Firebase/Google Calendar Based Organizer</small> </div>
-                              <img src="img/medium.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 hack">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://devpost.com/software/ez-nav" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Ez Nav</h4>
-                                <small>Smart/Optimal Travel Planning</small> </div>
-                              <img src="img/gallery.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://github.com/rbrtknwls/Algorthmic-Code-Archive" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Project Archive</h4>
-                                <small>Finished Games and Activites</small> </div>
-                              <img src="img/projects/ski.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                          <div class="col-sm-3 col-md-3 col-lg-3 res">
-                          <div class="portfolio-item">
-                            <div class="hover-bg"> <a href="https://www.facebook.com/DankLatinMemes/" title="Project description" rel="prettyPhoto">
-                              <div class="hover-text">
-                                <h4>Dank Latin Memes</h4>
-                                <small>Founder of a Meme Page with 18k likes</small> </div>
-                              <img src="img/projects/dlm.png" class="img-responsive" alt="Project Title"> </a> </div>
-                          </div>
-                        </div>
-                        
-                          
+        <!-- Splash Screen -->
+    <div id = "start">
+        <div class="opening">
+            <div class = "col">
+                <div class = "row">
+                    <div class = "col">
+                        <h1>Hey, </h1>
                     </div>
                 </div>
+                <h2> I'm <span id = "1">Robbie Knowles</span></h2>
+                <hr style = "width: 60%; margin-left: 0px; border: 1px solid">
+                <div class = "row">
+                    <h3 id = "fill"> (And I love to <span id = "2"></span> I make alot of stuff, like: </h3>
+                    <h3 id = "st" style="margin-left: 6px"> Websites</h3>
+                    <h3 id = "fill" style="margin-left: 0%">)</h3>
+                </div>
+                <div id="changeText"></div>
+            </div>
+        </div>
+        
+        <!-- About me -->
+        
+        <div class="card" id = "descred">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img id = "cov" src="img/program.png" style = "border-top-right-radius: 0;border-bottom-right-radius: 0 "class="card-img" alt="...">
+            </div>
+            <div class="col-md-7">
+                <div class="card-header">
+                    <h5 class="card-title"><span id = "3">About Me</span></h5>
+                  </div>
+              <div class="card-body">
+                  <p> I am a <span id = "year">17</span> year old <span id = "8">student</span>, <span id = "4">coder</span> and hacker! My main interest is tackling problems that I find interesting and to optimize already existing solutions to problems. I love doing <span id = "5">coding contests</span>* and hackathons**, I also have a ton of cool side projects. I am currently at <span id = "9">Upper Canada College</span> in the International Baccalaureate, where I do <span id = "10">Varisty Swim</span> and <span id = "11">Varisty Cross Country</span>, while I also run my own club and act as the <span id="6">Head of Technology</span> for the World Affairs Conference.</p>
+                  
+                <p style="text-align: center;margin-top: 7%; font-weight: bold"> I am looking for a job over the summer of 2020, so feel free to contact me about such!</p>
+                <p style="text-align:center; margin-bottom: 10%"><a id = "butt" href="doc/RK_Resume.pdf" role="button"><i class="fa fa-download fa"></i> Download My Resume</a></p>
+                <p style="margin-bottom: 0"><small class="text-muted">* 7 as of 13/11/19 </small></p>
+                <p style="margin-top: 0"><small class="text-muted">** 5 as of 13/11/19 </small></p>
+                  
+                <!-- Code to round the date -->
+                <script>
+                    var d = new Date();
+                    var b_day = 1;
+                    var b_mon= 4;
+                    var b_year= 102;
                     
-                
+                    var t_day = d.getDate();
+                    var t_mon = d.getMonth();
+                    var t_year = d.getYear();
+                    /*  I am a "+ (tot/365).toFixed(3)+ " year old student, coder and hacker! **/
+                    var tot = (t_day-b_day) + (t_mon-b_mon)*30.5 + (t_year-b_year)*365;
+                    
+                    document.getElementById("year").innerHTML =(tot/365).toFixed(3);
+                    
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "Workt">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Work Experince</span></h5>
+            </div>
+        </div>
+        
+        
+        <!-- WAC shiz -->
+        
+        
+        <div class="card" style="border: 0px;" id = "Work">
+            <div class="card" style="margin: 0; border: 0px">
+              <a href="https://www.ucc.on.ca/student-life/activities/world-affairs-conference"><img src="img/wac.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  
+                  <p class="card-text"> Since 2016, I have worked as a developer and the head of technology at the <span class = "redbol">World Affairs Conference </span> (also known as <span class = "redbol"> WAC</span>). The World Affairs Conference is North America's oldest student run conference, I manage their registration and their main website!</p>
+                  
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Hey!</strong> You can check out the specific pages by clicking the images!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px">
+              <div class="row no-gutters">
+                <div class="col-md-6" style = "margin: 0">
+                    <a href="https://worldaffairsconference.github.io/reg/#/"><img src="img/wacr.png" class="card-img" style = "border-right: 0px solid" alt="..."></a>
+                </div>
+                <div class="col-md-6" style = "margin: 0">
+                  <div class="card-body">
+                      <p class="card-text">This where we allow all schools (other than Upper Canada College) to register for the <span class = "redbol">World Affairs Conference</span>. It is built using <span class = "redbol">NPM</span> and the information is sent to Firebase. After registration is over, the information is converted to a CSV, and I use <span class = "redbol">C++</span> to allocate each person the plenary and speaker that they want. This is then sent to our design team, so that they can make name tags!
+                        
+                        
                       
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/donna" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Registration's Github</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px; border-top: 0px" >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="card-text">This in the main website for <span class = "redbol">WAC</span>. It contains all the information about the schedule and the speakers. As well, the website as containing information about the plenaries and members of the team. It was built using <span class = "redbol">Ruby</span>, and run using <span class = "redbol">Jekyll</span>, although for the sake of the new members, I also created a standalone html build for them to use to edit. </p>
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/worldaffairs.ucc.on.ca/tree/2017" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Website's Github</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="http://worldaffairs.ucc.on.ca/"><img src="img/wacf.png" style = "border-radius: 0" class="card-img" alt="..."></a>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        
+        
+        <!-- TOHC shiz -->
+        
+        
+        <div class="card" style="border: 0px solid" id = "TOHC">
+              <a href="http://torontohacker.club/"><img src="img/tohc.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  <p class="card-text">In 2016-2017, I worked at <span class = "redbol"> Toronto Hacker Club </span> (also known as <span class = "redbol"> TOHC </span>). I was offered a job as an event coordinator and worked on their logistics team, while also doing some very limited front end development. Below are some of the events I helped organize (and in the case of THacks 2, I also mentored at).</p>
+              </div>
+            <div class="card" style="border: 0px solid; margin: 0">
+                <div class="card-group">
+                    <div class="card" style="margin: 0">
+                        <a href="https://www.facebook.com/events/1753044898045337/"><img style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" src="img/bbrowse.png" class="card-img" alt="..."></a>
+                        <div class="card-body">
+                            <p class="card-text"><span class = "redbol">Brain Browse</span> was a 4-hour workshop about neuroscience and nanotechnology for students across the GTA. Participants had the opportunity to learn about bio metrics through lectures and hands-on experiments.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin: 0">
+                        <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552"> 
+                        <img src="img/tnight.png" style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" class="card-img" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text"><span class = "redbol">Tech Night</span> was a beginner friendly, hands on, exciting event for children aged 6 - 12. It was hosted at Richmond Hill Central Library, where students were able to create their own games and play with hardware.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="margin: 0">
+                        <a href = "http://thacks.tech/"><img style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" src="img/thacks.png" class="card-img" alt="..."></a>
+                        <div class="card-body">
+                          <p class="card-text"><span class = "redbol">Thacks 2</span> was a 24 hour hackathon held at University of Toronto. It hosted around 300 participants, along with dozens of sponsors, workshops and (of course) prizes! It was the very first hackathon I helped run, and I hope to do more in the future. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "gamet">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Video Game(s)</span></h5>
+            </div>
+        </div>
+        
+        <!-- Game/Sample -->
+        
+        <div class="card" id = "game">
+            <div style = "margin: 2%; margin-bottom: 0;"class="alert alert-danger alert-dismissible fade show" role="alert">
+                      For the sake of my sanity, I will not be converting the majority of my games into Javascript so they can be on my website... As many of my games are built with Python, C++ or Java! However for my ISC4U Class I made a version of pong that uses Javascript, that you can play below.
+                        <hr>
+                    <strong>However</strong>, they are all still on my Github. Maybe in the future (when my university applications are done) I will port them!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+            <div class="card" style="margin: 0; border: 0">
+                <div id="c" class="collapse show" aria-labelledby="c" data-parent="#awards">
+                  <div class="card-body">
+                    <style>
+                        canvas { background: #eee; }
+                    </style>
+
+                    <canvas id="pongcanv" width = "1250" height="600"></canvas>
+                    <p class = "text-center" style="margin-top: 1%"><a class="btn btn-lg btn-danger" onclick="startpong()" role="button">Start Game</a></p>
+                  </div>
+                </div>
+              </div>
+                
+                
+                  
+        
+            </div>
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "awardst">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Awards/Prizes</span></h5>
+            </div>
+        </div>
+        
+        <!-- Awards and Contest Coding -->
+        <div class="card" id = "awards">
+            <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="text-center" style="margin-top: 2%">
+                    <h3>Coding Related Prizes</h3>
+                    <hr class="my-3" style = "width: 20%; border: 1px solid; color: red">
+                  </div>
+                  <div class="card-body">
+                    <dl class="row align-items-center">
+                      <dt class="col-sm-3">Junior CCC Distinction (2016)</dt>
+                      <dd class="col-sm-9">Top 25th percentile on the Canadian Computer Contest with only missing one question, it was also my very first coding contest. </dd>
+
+                      <dt class="col-sm-3" style="margin-top: 2%">Thompson Prize for Computer Studies (2017)</dt>
+                      <dd class="col-sm-9" style="margin-top: 2%">
+                        <p>This was the for the top mark in ICS3U out of my class. I also this course two years before I should of for the OSSD. </p>
+                      </dd>
+
+
+                      <dt class="col-sm-3" style="margin-top: 2%">Provincial Finalist ECOO Contest (2018)</dt>
+                      <dd class="col-sm-9" style="margin-top: 2%">
+                        <p>I was apart of the highest ranking UCC of all time, scoring the most points and qualifying of provincals for the Educational Computing Organization of Ontario Contest.  </p>
+                      </dd>
+
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="img/caward.png" style = "border-top-left-radius: 0;border-bottom-left-radius: 0 "class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!----- END OF REDD ----->
+        
+        <div class="card" style="margin-bottom: 1%" id = "paperst">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "bluemain">Bro Moment</span></h5>
+            </div>
+        </div>
+        
+        <div class="card" style="border: 0px;" id = "research">
+            <div class="card" style="margin: 0; border: 0px">
+              <a href="https://www.ucc.on.ca/student-life/activities/world-affairs-conference"><img src="img/wac.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  
+                  <p class="card-text"> Since 2016, I have worked as a developer and the head of technology at the <span class = "redbol">World Affairs Conference </span> (also known as <span class = "redbol"> WAC</span>). The World Affairs Conference is North America's oldest student run conference, I manage their registration and their main website!</p>
+                  
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Hey!</strong> You can check out the specific pages by clicking the images!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px">
+              <div class="row no-gutters">
+                <div class="col-md-6" style = "margin: 0">
+                    <a href="https://worldaffairsconference.github.io/reg/#/"><img src="img/wacr.png" class="card-img" style = "border-right: 0px solid" alt="..."></a>
+                </div>
+                <div class="col-md-6" style = "margin: 0">
+                  <div class="card-body">
+                      <p class="card-text">This where we allow all schools (other than Upper Canada College) to register for the <span class = "redbol">World Affairs Conference</span>. It is built using <span class = "redbol">NPM</span> and the information is sent to Firebase. After registration is over, the information is converted to a CSV, and I use <span class = "redbol">C++</span> to allocate each person the plenary and speaker that they want. This is then sent to our design team, so that they can make name tags!
+                        
+                        
+                      
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/donna" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Registration's Github</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px; border-top: 0px" >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="card-text">This in the main website for <span class = "redbol">WAC</span>. It contains all the information about the schedule and the speakers. As well, the website as containing information about the plenaries and members of the team. It was built using <span class = "redbol">Ruby</span>, and run using <span class = "redbol">Jekyll</span>, although for the sake of the new members, I also created a standalone html build for them to use to edit. </p>
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/worldaffairs.ucc.on.ca/tree/2017" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Website's Github</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="http://worldaffairs.ucc.on.ca/"><img src="img/wacf.png" style = "border-radius: 0" class="card-img" alt="..."></a>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        
+        <div class="card" style="border: 0px;" id = "EE">
+            <div class="card" style="margin: 0; border: 0px">
+              <a href="https://www.ucc.on.ca/student-life/activities/world-affairs-conference"><img src="img/wac.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  
+                  <p class="card-text"> Since 2016, I have worked as a developer and the head of technology at the <span class = "redbol">World Affairs Conference </span> (also known as <span class = "redbol"> WAC</span>). The World Affairs Conference is North America's oldest student run conference, I manage their registration and their main website!</p>
+                  
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Hey!</strong> You can check out the specific pages by clicking the images!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px">
+              <div class="row no-gutters">
+                <div class="col-md-6" style = "margin: 0">
+                    <a href="https://worldaffairsconference.github.io/reg/#/"><img src="img/wacr.png" class="card-img" style = "border-right: 0px solid" alt="..."></a>
+                </div>
+                <div class="col-md-6" style = "margin: 0">
+                  <div class="card-body">
+                      <p class="card-text">This where we allow all schools (other than Upper Canada College) to register for the <span class = "redbol">World Affairs Conference</span>. It is built using <span class = "redbol">NPM</span> and the information is sent to Firebase. After registration is over, the information is converted to a CSV, and I use <span class = "redbol">C++</span> to allocate each person the plenary and speaker that they want. This is then sent to our design team, so that they can make name tags!
+                        
+                        
+                      
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/donna" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Registration's Github</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px; border-top: 0px" >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="card-text">This in the main website for <span class = "redbol">WAC</span>. It contains all the information about the schedule and the speakers. As well, the website as containing information about the plenaries and members of the team. It was built using <span class = "redbol">Ruby</span>, and run using <span class = "redbol">Jekyll</span>, although for the sake of the new members, I also created a standalone html build for them to use to edit. </p>
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/worldaffairs.ucc.on.ca/tree/2017" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Website's Github</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="http://worldaffairs.ucc.on.ca/"><img src="img/wacf.png" style = "border-radius: 0" class="card-img" alt="..."></a>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+        
+        <!----- END OF BLUE ----->
+        
+        <!-- Slide Show -->
+        
+        <div class="card" style="margin-bottom: 1%">
+            <div class="card-header">
+                <h5 class="card-title"><span id = "7">Learn More About My:</span></h5>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom: 35%">
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+            <!-- Indication @ Bottom -->
+                
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                
+                <div class="carousel-inner">
+
+                  <!-- Hackathon -->
+
+                  <div class="carousel-item active">
+                    <img src = "img/hackathons.png" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightgreen" style="font-weight: bold"><h1>Hackathons</h1></span>
+                          <p>Learn more about my projects at different <span class = "lightgreen">hackathons</span>; I tackled issues ranging from finding the <span class = "lightgreen">optimum amount of sleep</span> to how to making a <span class = "lightgreen">class organizer</span> and <span class = "lightgreen">more</span>! </p>
+                        <p><a class="btn btn-lg btn-success" onclick="buttpressgreen()" role="button">Learn more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Research/Papers -->
+                
+                  <div class="carousel-item">
+                    <img src = "img/research.png" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightblue" style="font-weight: bold"><h1>Research & Papers</h1></span>
+                        <p>Learn more about my more <span class = "lightblue">academic experiences</span>: From my papers for the <span class = "lightblue">International Baccalaureate</span>, to my research at <span class = "lightblue">Carlton's SCSI</span> program and all my other educational experiences. </p>
+                        <p><a class="btn btn-lg btn-primary" onclick="buttpressblue()" role="button">Go To</a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Coding -->
+                
+                  <div class="carousel-item">
+                    <img src = "img/coding.jpg" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightred" style="font-weight: bold"><h1>Programming</h1></span>
+                          <p>Learn more about my front end and back end <span class = "lightred">coding</span> experiences: From my work in designing <span class = "lightred">registration systems</span>, to my participation in <span class = "lightred">coding contests</span> and all my other coding experiences!
+                        <p><a class="btn btn-lg btn-danger" onclick="buttpressred()" role="button">Go To</a></p>
+                      </div>
+                    </div>
+                  </div>
                     
-                    
-                </section>
-				<!-- Experience 
-                    <section id="main" class="main">
-                        <header>
-                            <h2>Work / Internships</h2>
-                        </header>
-                            <section class="main items">
-                                <article class="item">
-                                    <h4>Toronto Hacker Club (2016-2017)</h4>
-                                    <p>As an event coordinator for TOHC, I helped
-                                    with the logistics for events including: Tech Night, Brain Browse and THacks 2. (listed bellow)</p>
-                                </article>
-                                <article class="item">
-                                    <h4>The Knowledge Society (Jan to Jun 2017)</h4>
-                                    <p>Learning as an innovator at TKS, I worked alongside other students in providing solutions to real world companies, earning an invitation to Air BNBs headquarters</p>
-                                </article>
-                            </section>
+                </div>
+                
+                <!-- Control -->
+                
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                
+            </div>
+        </div>
+        
     
-                            <article class="item">
-                                <header>
-                                    <a href="http://thacks.tech/"><img src="images/thacks2.png" alt="" /></a>
-                                <h2>THacks 2</h2>
-                                </header>
-                                <p>THacks 2 is Toronto's premier hackathon for learning, building and innovation. Held at the University of Toronto, the event features a jam-packed, 24-hour lineup of workshops, speakers and competition. At the end of weekend, teams of hackers will pitch their projects and compete for incredible prizes. </p>
-                            </article>
-                            <section class="main items">
-                                <article class="item">
-                                    <header>
-                                        <a href="http://torontohacker.club/"><img src="images/tnight.png" alt="" /></a>
-                                        <h3>Tech Night</h3>
-                                    </header>
-                                    <p>Designed much like Toronto Hacker Club’s other events, Tech Night is a beginner-friendly, hands-on, exciting event made especially for children aged 6 to 12 years old.</p>
-                                    <ul class="actions">
-                                    </ul>
-                                </article>
-
-                                <article class="item">
-                                    <header>
-                                        <a href="http://torontohacker.club/"><img src="images/bbrowse.png" alt="" /></a>
-                                        <h3>Brain Browse</h3>
-                                    </header>
-                                    <p>Exploring cutting-edge neuroscience and neurotechnology, Toronto Hacker Club and NeuroTechTO present you with our latest event, BrainBrowse.</p>
-                                </article>
-                            </section>
-                        </section>
-                        <section id="main" class="main">
-                        <header>
-                            <h2>Education</h2>
-                        </header>
-                        <section class="main items">
-                            <article class="item">
-                                <h4>Upper Canada College <br>(2012 - Present)</h4>
-                                <p>One of North America's top foremost boy's schools also an International Baccalaureate World School. Currently taking HL Math, ICS4U, CHW3M and SPH3U</p>
-                            </article>
-                            <article class="item">
-                                <h4>Olympiads School <br>(2016 - Present)</h4>
-                                <p>Olympiadss is a premier secondary education service, with many prestigious accolades. Currently taking AP Computer Science, Contest Coding Senior and English writing.</p>
-                            </article>
-                            <article class="item">
-                                <h4>University of Toronto DEEP <br>(2015 - 2017)</h4>
-                                <p>The Da Vinci Engineering Enrichment Program (DEEP) is designed for highly motivated high school students with an aptitude for science and math..</p>
-                            </article>
-                        </section>
-                    </section>
-           
+        
+        
+    
+        
+        <!-- Contact Info/Footer -->
+        
+        
+        <div class="justify-content-md-center">
+            <div class="jumbotron justify-content-md-center" style="opacity: 0.85; margin-bottom: 20%; width: 90%;margin-left: 5%">
                 
-                    <section id="main" class="main">
-						<header>
-							<h2>Repositories & Projects</h2>
-						</header>
-                        <section class="main items">
-                            <article class="item">
-                                <header>
-                                    <a onclick = "CCCOn()"><img src="images/ccc.jpg" alt="" /></a>
-                                    <h3>CCC Workspace</h3>
-                                </header>
-                                <div id="CCCOverlay" onclick="CCCOff()">
-                                    <section id="overtxt" class="main">
-                                        <h2>CCC Workspace;</h2>
-                                        <p>A repository where I store solutions to past CCC problems (averaging S3-S4 problems), generally solved in Python or C++ and sometimes Java. </p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/rbrtknwls/CCC_Solutions" class = "button">Github</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function CCCOn() {
-                                    document.getElementById("CCCOverlay").style.display = "block";
-                                }
-
-                                function CCCOff() {
-                                    document.getElementById("CCCOverlay").style.display = "none";
-                                }
-                                </script>
-                                
-                            </article>
-                            <article class="item">
-                                <header>
-                                    <a onclick = "WACOn()"><img src="images/WAC.svg" alt="" /></a>
-                                    <h3>World Affairs Conference 2018</h3>
-                                </header>
-                                <div id="WACOverlay" onclick="WACOff()">
-                                    <section id="overtxt" class="main">
-
-                                        <h2>World Affairs Conference 2017-2019;</h2>
-                                        <p>The World Affairs Conference (WAC) is Canada's oldest annual student-run current affairs conference hosted at Upper Canada College.</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/worldaffairsconference/world.ac" class = "button">Github</a></li>
-                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">Website</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function WACOn() {
-                                    document.getElementById("WACOverlay").style.display = "block";
-                                }
-
-                                function WACOff() {
-                                    document.getElementById("WACOverlay").style.display = "none";
-                                }
-                                </script>
-                            
-                                
-                            </article>
-                            <article class="item">
-                                <header>
-                                    <a onclick = SkiOn()><img src="images/sking.jpg" alt="" /></a>
-                                    <h3>2.5D Skiing Game</h3>
-                                </header>
-                                <div id="SkiOverlay" onclick="SkiOff()">
-                                    
-                                    <section id="overtxt" class="main">
-
-                                        <h2>Ski Game;</h2>
-                                        <p>A simple 2.5D skiing game, made for the OLPC (port instructions inside), made for my ICS3U Class using built in python graphics and basic math</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://docs.google.com/presentation/d/1qhYZ2ZeF8jQaPckfk7AfHFfW5u4tbtIhVXrwpkXMsac/edit?usp=sharing" class="button">Process</a></li>
-                                            <li><a href="https://www.dropbox.com/sh/w1cxgqoa0b13yx0/AAAJVqFCx5uMxgiuMnDCsBU0a?dl=0" class="button">V 1.1</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function SkiOn() {
-                                    document.getElementById("SkiOverlay").style.display = "block";
-                                }
-
-                                function SkiOff() {
-                                    document.getElementById("SkiOverlay").style.display = "none";
-                                }
-                                </script>
-                            </article>
-                            
-                            <article class="item">
-                                <header>
-                                    <a onclick = "AlgoOn()"><img src="images/algo.jpg" alt="" /></a>
-                                    <h3>Algorithm Misc</h3>
-                                </header>
-                                <div id="AlgoOverlay" onclick="AlgoOff()">
-                                    
-                                    <section id="overtxt" class="main">
-
-                                        <h2>Algorithm Misc;</h2>
-                                        <p>A miscellaneous header for my other contest/algorithm workplaces, and some work for some of my ICS4U class</p>
-                                        <h3>See More:</h3>
-                                        <ul class="actions">
-                                            <li><a href="https://github.com/rbrtknwls/Project-Euler" class="button">Euler</a></li>
-                                            <li><a href="https://github.com/rbrtknwls/ICS4U-Game" class="button">ICS4U</a></li>
-                                        </ul>
-                                    </section>
-                                    
-                                </div>
-                                <script>
-                                function AlgoOn() {
-                                    document.getElementById("AlgoOverlay").style.display = "block";
-                                }
-
-                                function AlgoOff() {
-                                    document.getElementById("AlgoOverlay").style.display = "none";
-                                }
-                            </script>
-                            </article>
-                            
-                        </section>
-                        -->
+              <!-- Greeting -->
                 
+              <h1 class="display-4">Any Questions?</h1>
+              <p class="lead">I am happy to answer any questions that you may have, so feel free to get in touch!</p>
+              <hr class="my-4">
                 
-				
-				
+              <!-- Type Form -->
+                
+              <form accept-charset="utf-8" action="https://formspree.io/robbie.knowles@ucc.on.ca" method="post">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" name="name" class = "form-control" placeholder="First Name" required="">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control" name="_replyto" placeholder="Contact Email" required="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mt-2 ml-0">
+                      <textarea rows="5" class = "form-control" name="message" id="message" placeholder="Your message here." required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/profile.php?id=100012932622555" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/rbrtknwls" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/robbie-knowles/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:robbie.knowles@ucc.on.ca" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</footer>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mt-2 ml-0">
+                        <input class="btn btn-lg btn-danger" type="submit" value="Submit Your Message">
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            
+             <!-- Footer -->
+            <hr id = "bar" class="my-3" style = "width: 20%; border: 1px solid; color: red">
+            <ul class="list-group list-group-horizontal-lg justify-content-md-center">
+              <a href="https://github.com/rbrtknwls" style="margin-right: 1%"><i id = "git" class="fa fa-github fa-2x" style="color: red"></i></a>
+              <a href="https://www.instagram.com/robbie.knowles/?hl=en" style="margin-right: 1%"><i id = "ins" class="fa fa-instagram fa-2x" style="color: red"></i></a>
+              <a href="https://www.linkedin.com/in/robbie-knowles/"><i id = "lin" class="fa fa-linkedin fa-2x" style="color: red"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100012932622555" style="margin-left: 1%"><i id = "fac" class="fa fa-facebook fa-2x" style="color: red"></i></a>
+              <a href="https://devpost.com/rbrtknwls?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" style="margin-left: 1%"><i id = "cod" class="fa fa-code fa-2x" style="color: red"></i></a>
+            </ul>
+            <br>
 
-			</div>
-
+          </div>
+        </div>
+        
+        
 		<!-- Scripts -->
-        <script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
-                <script type="text/javascript" src="assets/js/easypiechart.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.isotope.js"></script> 
-        <script type="text/javascript" src="assets/js/jquery.counterup.js"></script> 
-        <script type="text/javascript" src="assets/js/waypoints.js"></script> 
-        <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script> 
-        <script type="text/javascript" src="assets/js/main.js"></script>
-
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/script.js"></script>
+        
+        
 	</body>
 </html>
