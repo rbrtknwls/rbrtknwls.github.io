@@ -10,7 +10,6 @@ highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 function start(){
     var val = Math.random();
     
-    //--- PERMA LOCK TO KEEP RED
     if (val <= 1){
         turnred();
         
@@ -114,7 +113,7 @@ function turnblue() {
     }
     document.getElementById("2").innerHTML = "learn!";
     
-    document.getElementById("cov").src = "img/learnp.png";
+    document.getElementById("cov").src = "img/cover2.png";
     
     text = ["Research Papers", "Extended Essays", "Independent Assessments", "Math Proofs", "Latin Explorations", "Physics/Chem Labs", "Science Write Ups"];
     
