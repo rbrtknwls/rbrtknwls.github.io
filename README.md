@@ -34,9 +34,9 @@ Anyways heres some of the stuff I finished and stuff I plan to add:
 - [ ] Hackathons
   - [ ] Data Base Style Projects:
     - [ ] Ez Nav (Hack Lassonde)
-    - [ ] School Center (Massy Hacks)
+    - [ ] School Center (Massey Hacks)
   - [ ] Informative / Starter Hacks:
     - [ ] Get Smart(er) (Jam Hacks 2)
     - [ ] SAid (BLG Learning Group)
-  - [ ] Others..?!? I will add more later... once I learn how to organize...
+  - [ ] Others..?!? 
   - [ ] Calender with Hackathons I got into / applied too
