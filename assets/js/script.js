@@ -10,7 +10,7 @@ highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 function start(){
     var val = Math.random();
     
-    if (val <= 0){
+    if (val <= 0.5){
         turnred();
         
         document.getElementById(currflex).id = "fluxtextr";
@@ -87,6 +87,14 @@ function turnred() {
     }
     document.getElementById("2").innerHTML = "code!";
     document.getElementById("butt").className = "btn btn-lg btn-danger"
+
+    document.getElementById("git").style.color = "red";
+    document.getElementById("ins").style.color = "red";
+    document.getElementById("lin").style.color = "red";
+    document.getElementById("fac").style.color = "red";
+    document.getElementById("cod").style.color = "red";
+    document.getElementById("bar").style.color = "red";
+    
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 
