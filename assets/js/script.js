@@ -10,7 +10,7 @@ highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 function start(){
     var val = Math.random();
     
-    if (val <= 1){
+    if (val <= 0.5){
         turnred();
         
         document.getElementById(currflex).id = "fluxtextr";
@@ -54,7 +54,9 @@ function alloff(){
     //blue
     document.getElementById("paperst").style.display = "none";
     document.getElementById("research").style.display = "none";
+    
     document.getElementById("EE").style.display = "none";
+    document.getElementById("EEtitle").style.display = "none";
     
 }
 
@@ -75,7 +77,7 @@ function turnred() {
     document.getElementById("TOHC").style.display = "block";
     
     
-    document.getElementById("cov").src = "img/program.png";
+    document.getElementById("cov").src = "img/Red_Theme_Res/head/program.png";
     
     text = ["Websites", "Applets", "Solutions", "Registration Systems", "Data Parsers", "Calculators", "Games", "Simulations"];
     
@@ -85,6 +87,14 @@ function turnred() {
     }
     document.getElementById("2").innerHTML = "code!";
     document.getElementById("butt").className = "btn btn-lg btn-danger"
+
+    document.getElementById("git").style.color = "red";
+    document.getElementById("ins").style.color = "red";
+    document.getElementById("lin").style.color = "red";
+    document.getElementById("fac").style.color = "red";
+    document.getElementById("cod").style.color = "red";
+    document.getElementById("bar").style.color = "red";
+    
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 
@@ -101,6 +111,7 @@ function turnblue() {
     document.getElementById("paperst").style.display = "block";
     document.getElementById("research").style.display = "block";
     document.getElementById("EE").style.display = "block";
+    document.getElementById("EEtitle").style.display = "block";
     
     
     
@@ -113,7 +124,7 @@ function turnblue() {
     }
     document.getElementById("2").innerHTML = "learn!";
     
-    document.getElementById("cov").src = "img/cover2.png";
+    document.getElementById("cov").src = "img/Blue_Theme_Res/cover2.png";
     
     text = ["Research Papers", "Extended Essays", "Independent Assessments", "Math Proofs", "Latin Explorations", "Physics/Chem Labs", "Science Write Ups"];
     
