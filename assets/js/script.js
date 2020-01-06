@@ -75,7 +75,7 @@ function turnred() {
     document.getElementById("TOHC").style.display = "block";
     
     
-    document.getElementById("cov").src = "img/program.png";
+    document.getElementById("cov").src = "img/Red_Theme_Res/head/program.png";
     
     text = ["Websites", "Applets", "Solutions", "Registration Systems", "Data Parsers", "Calculators", "Games", "Simulations"];
     
