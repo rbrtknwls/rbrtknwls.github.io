@@ -10,7 +10,7 @@ highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 function start(){
     var val = Math.random();
     
-    if (val <= 1){
+    if (val <= 0){
         turnred();
         
         document.getElementById(currflex).id = "fluxtextr";
@@ -113,7 +113,7 @@ function turnblue() {
     }
     document.getElementById("2").innerHTML = "learn!";
     
-    document.getElementById("cov").src = "img/cover2.png";
+    document.getElementById("cov").src = "img/Blue_Theme_Res/cover2.png";
     
     text = ["Research Papers", "Extended Essays", "Independent Assessments", "Math Proofs", "Latin Explorations", "Physics/Chem Labs", "Science Write Ups"];
     
