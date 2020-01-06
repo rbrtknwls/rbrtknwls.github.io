@@ -54,7 +54,9 @@ function alloff(){
     //blue
     document.getElementById("paperst").style.display = "none";
     document.getElementById("research").style.display = "none";
+    
     document.getElementById("EE").style.display = "none";
+    document.getElementById("EEtitle").style.display = "none";
     
 }
 
@@ -101,6 +103,7 @@ function turnblue() {
     document.getElementById("paperst").style.display = "block";
     document.getElementById("research").style.display = "block";
     document.getElementById("EE").style.display = "block";
+    document.getElementById("EEtitle").style.display = "block";
     
     
     
