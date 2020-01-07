@@ -20,16 +20,16 @@ Anyways heres some of the stuff I finished and stuff I plan to add:
     - [ ] The Night
     - [ ] Ski Escape
   - [x] Awards
-- [ ] Research
-    - [ ] Carleton College Research
-      - [ ] MPI Conways Game of Life
-      - [ ] MPI WaterFill
-      - [ ] MPI Integration
-    - [ ] IB Extended Essay
-    - [ ] IB Independent Assignments
-      - [ ] Operations Research and Combat Positions (HL Math Paper)
-      - [ ] Thermodynamics and Wire Physics (HL Physics Paper)
-      - [ ] More??? Im not sure... I could add my Latin, or Economics Papers..
+- [x] Research
+    - [x] Carleton College Research
+      - [x] MPI Conways Game of Life
+      - [x] MPI WaterFill
+      - [x] MPI Integration
+    - [x] IB Extended Essay
+    - [x] IB Independent Assignments
+      - [x] Operations Research and Combat Positions (HL Math Paper)
+      - [x] Thermodynamics and Wire Physics (HL Physics Paper)
+      - [x] More??? Im not sure... I could add my Latin, or Economics Papers..
     - [ ] (maybe) Add a booklist of stuff I found interesting??
 - [ ] Hackathons
   - [ ] Data Base Style Projects:
