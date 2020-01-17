@@ -8,7 +8,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin">
-		
+        
+		<link id="favicon" rel="shortcut icon" type="image/png" href="img/Favicon/red.png"/>
+        
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -17,8 +19,6 @@
     <!-- Theming -->
     
     <style>
-
-        
         .card{
             border-color: black;
         }
@@ -38,7 +38,25 @@
     
     
 	<body>
+    <div class = "stayleft" id = "ltouch" style="display: none">
+        <span class="carousel-control-prev-icon" aria-hidden="true" onclick = "back()"></span>
+    </div>
+    <div class = "stayright" id = "rtouch" style="display: none">
+        <span class="carousel-control-next-icon" aria-hidden="true" onclick="forward()"></span>
+    </div>
         
+    <script>
+    window.addEventListener('scroll', function() {
+        if(window.scrollY > 200) {
+            $("#ltouch").fadeIn(500);
+            $("#rtouch").fadeIn(500);
+        }else{
+            document.getElementById("ltouch").style.display = "none";
+            document.getElementById("rtouch").style.display = "none";
+        }
+    });
+    
+    </script>
         <!-- Splash Screen -->
     <div id = "start">
         <div class="opening">

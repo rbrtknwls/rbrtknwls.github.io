@@ -2,22 +2,46 @@ var initr = 0;
 var text = ["Websites", "Applets", "Solutions", "Registration Systems", "Data Parsers", "Calculators", "Games", "Simulations"];
 var inst = setInterval(change, 2000);
 var counter = 1;
+var count = 0;
 var currflex = "st"
 var curr = "start";
 
 highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
 
+function back(){
+    count--;
+    count = count%2;
+    if (count == 0){
+        turnred();
+    }else{
+        turnblue();
+    }
+}
+function forward(){
+    count++;
+    count = count%2;
+    if (count == 0){
+        turnred();
+    }else{
+        turnblue();
+    }
+}
+function goback(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 function start(){
     var val = Math.random();
     
     if (val <= 0.5){
         turnred();
-        
+        count = 0;
         document.getElementById(currflex).id = "fluxtextr";
         currflex = "fluxtextr";
         
     }else{
         turnblue();
+        count = 1;
         document.getElementById(currflex).id = "fluxtextb";
         currflex = "fluxtextb";
     }
@@ -28,12 +52,14 @@ function buttpressred(){
     document.getElementById(currflex).id = "fluxtextr";
     currflex = "fluxtextr";
     turnred();
+    goback();
 }
 function buttpressblue(){
     
     document.getElementById(currflex).id = "fluxtextb";
     currflex = "fluxtextb";
     turnblue();
+    goback();
 }
 function alloff(){
     for (var i = 0; i < highlighall.length; i++){
@@ -95,10 +121,7 @@ function turnred() {
     document.getElementById("cod").style.color = "red";
     document.getElementById("bar").style.color = "red";
     
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-
-   
+    $("#favicon").attr("href","img/Favicon/red.png");
 
 
 }
@@ -136,9 +159,8 @@ function turnblue() {
     document.getElementById("cod").style.color = "blue";
     document.getElementById("bar").style.color = "blue";
     
+    $("#favicon").attr("href","img/Favicon/blue.png");
     
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
     
 }
 
