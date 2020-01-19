@@ -4,7 +4,7 @@ Welcome to my personal CV, that I use mainly for applying to hackathons (and may
 The website has three different layouts which are randomly picked upon loading:
 ```
 Hackathons; Where I store all my past projects that I have done, and some of prizes.[Not Done] 
-Research; Where I store all the papers and other academic work that I have created. [Not Done] 
+Research; Where I store all the papers and other academic work that I have created. [Done] 
 Programming; Where I share my goings-on vis-à-vis coding contests and my job(s). [Done] 
 ```
 All the "art" on the website is made by me! If you are interested I can post a link where you can download it, or you can just use inspect element and take it that way...
