@@ -85,7 +85,15 @@ function alloff(){
     document.getElementById("EEtitle").style.display = "none";
     
 }
-
+$(window).resize(function() {
+  if (window.innerWidth > 1300){
+      document.getElementById("game").style.display = "block";
+      document.getElementById("gamet").style.display = "block";
+  }else{
+      document.getElementById("game").style.display = "none";
+      document.getElementById("gamet").style.display = "none";
+  }
+});
 function turnred() {
     alloff();
     document.getElementById(curr).id = "red";
@@ -95,8 +103,11 @@ function turnred() {
     document.getElementById("awardst").style.display = "block";
     document.getElementById("awards").style.display = "block";
     
-    document.getElementById("game").style.display = "block";
-    document.getElementById("gamet").style.display = "block";
+    if (window.innerWidth > 1300){
+        document.getElementById("game").style.display = "block";
+        document.getElementById("gamet").style.display = "block";
+    }
+    
     
     document.getElementById("Workt").style.display = "block";
     document.getElementById("Work").style.display = "block";
