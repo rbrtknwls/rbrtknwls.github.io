@@ -243,15 +243,12 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 40rem;
+  height: 40em;
 }
 .carousel-item > img {
-  position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  overflow: hidden;
-  height: 40rem;
+  object-fit: cover;
   filter: brightness(30%);
 }
 
