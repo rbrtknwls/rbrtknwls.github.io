@@ -1,9 +1,7 @@
 var initr = 0;
-var text = ["Websites", "Applets", "Solutions", "Registration Systems", "Data Parsers", "Calculators", "Games", "Simulations"];
 var inst = setInterval(change, 2000);
 var counter = 1;
 var count = 0;
-var currflex = "st"
 var curr = "start";
 
 highlighall = ["1","2","3","4","5","6","7","8","9","10","11"];
@@ -96,6 +94,7 @@ $(window).resize(function() {
 });
 function turnred() {
     alloff();
+    counter = 0;
     document.getElementById(curr).id = "red";
     curr = "red";
     
@@ -131,6 +130,7 @@ function turnred() {
     document.getElementById("fac").style.color = "red";
     document.getElementById("cod").style.color = "red";
     document.getElementById("bar").style.color = "red";
+    document.getElementById("st").className = "redbol";
     
     $("#favicon").attr("href","img/Favicon/red.png");
 
@@ -138,6 +138,7 @@ function turnred() {
 }
 function turnblue() {
     alloff();
+    counter = 0;
     document.getElementById(curr).id = "blue";
     curr = "blue";
     
@@ -169,6 +170,7 @@ function turnblue() {
     document.getElementById("fac").style.color = "blue";
     document.getElementById("cod").style.color = "blue";
     document.getElementById("bar").style.color = "blue";
+    document.getElementById("st").className = "bluemain";
     
     $("#favicon").attr("href","img/Favicon/blue.png");
     
@@ -177,10 +179,9 @@ function turnblue() {
 
 function change() {
     
-  document.getElementById(currflex).innerHTML = " " + text[counter];
+  document.getElementById("st").innerHTML = " " + text[counter];
   counter++;
   if (counter >= text.length) {
     counter = 0;
-    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
