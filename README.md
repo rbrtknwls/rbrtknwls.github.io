@@ -1,5 +1,7 @@
-# Hey!
+# Hey! (Currently Under A Massive Rework!)
 Welcome to my personal CV, that I use mainly for applying to hackathons (and maybe jobs in the future??)
+
+
 
 The website has three different layouts which are randomly picked upon loading:
 ```
