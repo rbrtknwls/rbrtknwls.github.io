@@ -52,5 +52,12 @@ Shows cool stuff that I have gotten organized into general groups, I might make 
 
 Transition from the home page, yeah just for posterity | ![about](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Outreach%20(Home-_Organization)%20.png)
 | :--- | ---: 
-All my toronto hacker club stuff, will let the images change by themselves I think, might make it a loop! Im not sure yet but probs will be alot of writing..| ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/About%20Me%20(Bio).png)
-Shows cool stuff that I have gotten organized into general groups, I might make those groups show up in the search as well| ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/About%20Me%20(Skills%20_%20Awards).png)
+All my Toronto Hacker Club stuff, will let the images change by themselves I think, might make it a loop! Im not sure yet but probs will be alot of writing..| ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Outreach%20(Organization)%20.png)
+All my Toronto Hacker Club stuff, will let the images change by themselves I think, might make it a loop! Im not sure yet but probs will be alot of writing..| ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Outreach%20(Organization)%20%20(1).png)
+
+## Footer:
+
+If you ask to search for more, uses cookies to get how much you've seen! | ![about](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Footer%20(Search%20More).png)
+| :--- | ---: 
+If you ask to ask a question, must leave name and email| ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Footer%20(Ask%20a%20Question)%20.png)
+
