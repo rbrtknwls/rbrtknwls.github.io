@@ -1,17 +1,585 @@
 <!DOCTYPE HTML>
 <html>
-
+    
     <!-- Metaish Data -->
-
+    
 	<head>
 		<title>Robert Knowles</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin">
-
+        
+		<link id="favicon" rel="shortcut icon" type="image/png" href="img/Favicon/red.png"/>
+        
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+    
+    <!-- Theming -->
+    
+    <style>
+        .card{
+            border-color: black;
+        }
+        #red {
+          background-image: url(img/Red_Theme_Res/Background/valc.png), url(img/Red_Theme_Res/Background/start.png), url(img/Red_Theme_Res/Background/scroll.png);
+          background-repeat: no-repeat, no-repeat, repeat;
+          background-position: bottom, top, top;
+          background-size: 1890px   1890px ,1890px  1890px, 1890px  1890px;
+          margin-top: 0%;
+        }
+        #blue{
+          background-image: url(img/Blue_Theme_Res/Background/botblue.png), url(img/Blue_Theme_Res/Background/topbl.png), url(img/Blue_Theme_Res/Background/scrollb.png);
+          background-repeat: no-repeat, no-repeat, repeat;
+          background-position: bottom, top, top;
+          margin-top: 0%;
+        }
+    </style>
+    
+    
+	<body>
+    <div class = "stayleft" id = "ltouch" style="display: none">
+        <span class="carousel-control-prev-icon" aria-hidden="true" onclick = "back()"></span>
+    </div>
+    <div class = "stayright" id = "rtouch" style="display: none">
+        <span class="carousel-control-next-icon" aria-hidden="true" onclick="forward()"></span>
+    </div>
+        
+    <script>
+    window.addEventListener('scroll', function() {
+        if(window.scrollY > 200) {
+            $("#ltouch").fadeIn(500);
+            $("#rtouch").fadeIn(500);
+        }else{
+            document.getElementById("ltouch").style.display = "none";
+            document.getElementById("rtouch").style.display = "none";
+        }
+    });
+    
+    </script>
+        <!-- Splash Screen -->
+    <div id = "start">
+        <div class="opening">
+            <div class = "col">
+                <div class = "row">
+                    <div class = "col">
+                        <h1>Hey, </h1>
+                    </div>
+                </div>
+                <h2> I'm <span id = "1">Robbie Knowles</span></h2>
+                <hr style = "width: 60%; margin-left: 0px; border: 1px solid">
+                <div class = "row">
+                    <h3 id = "fill"> (And I love to <span id = "2"></span> I make alot of stuff, like: </h3>
+                    <h3 id = "st" style="margin-left: 6px"> Websites</h3>
+                    <h3 id = "fill" style="margin-left: 0%">)</h3>
+                </div>
+                <div id="changeText"></div>
+            </div>
+        </div>
+        
+        <!-- About me -->
+        
+        <div class="card" id = "descred">
+          <div class="row no-gutters">
+            <div class="col-xl-5">
+              <img id = "cov" src="img/Red_Theme_Res/program.png" style = "border-top-right-radius: 0;border-bottom-right-radius: 0 "class="card-img" alt="...">
+            </div>
+            <div class="col-xl-7">
+                <div class="card-header">
+                    <h5 class="card-title"><span id = "3">About Me</span></h5>
+                  </div>
+              <div class="card-body">
+                  <p> I am a <span id = "year">18</span> year old <span id = "8">student</span>, <span id = "4">coder</span> and hacker! My main interest is tackling problems that I find interesting and to optimize already existing solutions to problems. I love doing <span id = "5">coding contests</span>* and hackathons**, I also have a ton of cool side projects. I am currently at <span id = "9">Upper Canada College</span> in the International Baccalaureate, where I do <span id = "10">Varisty Swim</span> and <span id = "11">Varisty Cross Country</span>, while I also run my own club and act as the <span id="6">Head of Technology</span> for the World Affairs Conference.</p>
+                  
+                <p style="text-align: center;margin-top: 7%; font-weight: bold"> I am looking for a job over the summer of 2020, so feel free to contact me about such!</p>
+                <p style="text-align:center;"><a id = "butt" href="doc/RK_Resume.pdf" role="button"><i class="fa fa-download fa"></i> Download My Resume</a></p>
+                  
+                <!-- Code to round the date -->
+                <script>
+                    var d = new Date();
+                    var b_day = 1;
+                    var b_mon= 4;
+                    var b_year= 102;
+                    
+                    var t_day = d.getDate();
+                    var t_mon = d.getMonth();
+                    var t_year = d.getYear();
+                    /*  I am a "+ (tot/365).toFixed(3)+ " year old student, coder and hacker! **/
+                    var tot = (t_day-b_day) + (t_mon-b_mon)*30.5 + (t_year-b_year)*365+150;
+                    
+                    document.getElementById("year").innerHTML =(tot/365).toFixed(3);
+                    
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "Workt">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Work Experince</span></h5>
+            </div>
+        </div>
+        
+        
+        <!-- WAC shiz -->
+        
+        
+        <div class="card" style="border: 0px;" id = "Work">
+            <div class="card" style="margin: 0; border: 0px">
+              <a href="https://www.ucc.on.ca/student-life/activities/world-affairs-conference"><img src="img/Red_Theme_Res/Work/wac.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  
+                  <p class="card-text"> Since 2016, I have worked as a developer and the head of technology at the <span class = "redbol">World Affairs Conference </span> (also known as <span class = "redbol"> WAC</span>). The World Affairs Conference is North America's oldest student run conference, I manage their registration and their main website!</p>
+                  
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      <strong>Hey!</strong> You can check out the specific pages by clicking the images!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px">
+              <div class="row no-gutters">
+                <div class="col-md-6" style = "margin: 0">
+                    <a href="https://worldaffairsconference.github.io/reg/#/"><img src="img/Red_Theme_Res/Work/wacr.png" class="card-img" style = "border-right: 0px solid" alt="..."></a>
+                </div>
+                <div class="col-md-6" style = "margin: 0">
+                  <div class="card-body">
+                      <p class="card-text">This where we allow all schools (other than Upper Canada College) to register for the <span class = "redbol">World Affairs Conference</span>. It is built using <span class = "redbol">NPM</span> and the information is sent to Firebase. After registration is over, the information is converted to a CSV, and I use <span class = "redbol">C++</span> to allocate each person the plenary and speaker that they want. This is then sent to our design team, so that they can make name tags!
+                        
+                        
+                      
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/donna" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Registration's Github</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="margin: 0; border-radius: 0px; border-top: 0px" >
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="card-text">This in the main website for <span class = "redbol">WAC</span>. It contains all the information about the schedule and the speakers. As well, the website as containing information about the plenaries and members of the team. It was built using <span class = "redbol">Ruby</span>, and run using <span class = "redbol">Jekyll</span>, although for the sake of the new members, I also created a standalone html build for them to use to edit. </p>
+                    <p style="text-align:center"><a href = "https://github.com/worldaffairsconference/worldaffairs.ucc.on.ca/tree/2017" class ="btn btn-lg btn-danger" style="margin-top: 5%" role="button">Visit the Website's Github</a></p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <a href="http://worldaffairs.ucc.on.ca/"><img src="img/Red_Theme_Res/Work/wacf.png" style = "border-radius: 0" class="card-img" alt="..."></a>
+                </div>
+              </div>
+            </div>
 
+
+        </div>
+        
+        
+        <!-- TOHC shiz -->
+        
+        
+        <div class="card" style="border: 0px solid" id = "TOHC">
+              <a href="http://torontohacker.club/"><img src="img/Red_Theme_Res/Work/tohc.png" class="card-img" alt="..."></a>
+              <div class="card-body">
+                  <p class="card-text">In 2016-2017, I worked at <span class = "redbol"> Toronto Hacker Club </span> (also known as <span class = "redbol"> TOHC </span>). I was offered a job as an event coordinator and worked on their logistics team, while also doing some very limited front end development. Below are some of the events I helped organize (and in the case of THacks 2, I also mentored at).</p>
+              </div>
+            <div class="card" style="border: 0px solid; margin: 0">
+                <div class="card-group">
+                    <div class="card" style="margin: 0">
+                        <a href="https://www.facebook.com/events/1753044898045337/"><img style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" src="img/Red_Theme_Res/Work/bbrowse.png" class="card-img" alt="..."></a>
+                        <div class="card-body">
+                            <p class="card-text"><span class = "redbol">Brain Browse</span> was a 4-hour workshop about neuroscience and nanotechnology for students across the GTA. Participants had the opportunity to learn about bio metrics through lectures and hands-on experiments.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin: 0">
+                        <a href="https://www.facebook.com/torontohackerclub/videos/1482987301757552"> 
+                        <img src="img/Red_Theme_Res/Work/tnight.png" style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" class="card-img" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text"><span class = "redbol">Tech Night</span> was a beginner friendly, hands on, exciting event for children aged 6 - 12. It was hosted at Richmond Hill Central Library, where students were able to create their own games and play with hardware.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="margin: 0">
+                        <a href = "http://thacks.tech/"><img style = "border-bottom: 1px solid black; border-bottom-left-radius: 0; border-bottom-right-radius: 0" src="img/Red_Theme_Res/Work/thacks.png" class="card-img" alt="..."></a>
+                        <div class="card-body">
+                          <p class="card-text"><span class = "redbol">Thacks 2</span> was a 24 hour hackathon held at University of Toronto. It hosted around 300 participants, along with dozens of sponsors, workshops and (of course) prizes! It was the very first hackathon I helped run, and I hope to do more in the future. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "gamet">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Video Game(s)</span></h5>
+            </div>
+        </div>
+        
+        <!-- Game/Sample -->
+        
+        <div class="card" id = "game">
+            <div style = "margin: 2%; margin-bottom: 0;"class="alert alert-danger alert-dismissible fade show" role="alert">
+                      For the sake of my sanity, I will not be converting the majority of my games into Javascript so they can be on my website... As many of my games are built with Python, C++ or Java! However for my ISC4U Class I made a version of pong that uses Javascript, that you can play below.
+                        <hr>
+                    <strong>However</strong>, they are all still on my Github. Maybe in the future (when my university applications are done) I will port them!
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+            <div class="card" style="margin: 0; border: 0">
+                <div id="c" class="collapse show" aria-labelledby="c" data-parent="#awards">
+                  <div class="card-body">
+                    <style>
+                        canvas { background: #eee; }
+                    </style>
+
+                    <canvas id="pongcanv" width = "1250" height="600"></canvas>
+                    <p class = "text-center" style="margin-top: 1%"><a class="btn btn-lg btn-danger" onclick="startpong()" role="button">Start Game</a></p>
+                  </div>
+                </div>
+              </div>
+                
+                
+                  
+        
+            </div>
+        
+        <!-- Buffer Title -->
+        
+        <div class="card" style="margin-bottom: 1%" id = "awardst">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "redbol">Awards/Prizes</span></h5>
+            </div>
+        </div>
+        
+        <!-- Awards and Contest Coding -->
+        <div class="card" id = "awards">
+            <div class="row no-gutters">
+                <div class="col-md-8">
+                  <div class="text-center" style="margin-top: 2%">
+                    <h3>Coding Related Prizes</h3>
+                    <hr class="my-3" style = "width: 20%; border: 1px solid; color: red">
+                  </div>
+                  <div class="card-body">
+                    <dl class="row align-items-center">
+                      <dt class="col-sm-3">Junior CCC Distinction (2016)</dt>
+                      <dd class="col-sm-9">Top 25th percentile on the Canadian Computer Contest with only missing one question, it was also my very first coding contest. </dd>
+
+                      <dt class="col-sm-3" style="margin-top: 2%">Thompson Prize for Computer Studies (2017)</dt>
+                      <dd class="col-sm-9" style="margin-top: 2%">
+                        <p>This was the for the top mark in ICS3U out of my class. I also this course two years before I should of for the OSSD. </p>
+                      </dd>
+
+
+                      <dt class="col-sm-3" style="margin-top: 2%">Provincial Finalist ECOO Contest (2018)</dt>
+                      <dd class="col-sm-9" style="margin-top: 2%">
+                        <p>I was apart of the highest ranking UCC of all time, scoring the most points and qualifying of provincals for the Educational Computing Organization of Ontario Contest.  </p>
+                      </dd>
+
+                    </dl>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="img/Red_Theme_Res/head/caward.png" style = "border-top-left-radius: 0;border-bottom-left-radius: 0 "class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!----- BLUE THEME  ----->
+        
+        <div class="card" style="margin-bottom: 1%" id = "paperst">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "bluemain">Research</span></h5>
+            </div>
+        </div>
+        
+        <div class="card" style="border: 0px;display: none" id = "research">
+            <div class="card" style="margin: 0; border: 0px">
+                <h5 class="card-header">
+                    <p class="card-text">In the summer of 2019, I did research at <span class = "bluemain">Carleton College</span> through their <span class = "bluemain">SCSI</span> program. Here are the results from across our 3 test batches: </p>
+                </h5>
+                <div class="card" style="margin: 0; border: 0px;border-bottom: 1px solid; margin-bottom: 0px">
+                    <div class="row no-gutters">
+                        <div class="col-xl-6">
+                          <div class="text-center" style="margin-top: 2%">
+                            <h3>Parallel Integration</h3>
+                            <hr style = "width: 50%; border: 1px solid; color: blue">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Using the MPI Frame work, I built a parallel version of Euler Step. The dotted lines represent a Raspberry Pi CPU (with a <b>1.2 GHz</b> clock speed) where as the straight line represents a Local Cluster CPU (with a <b>2 GHz</b> clock speed) </p>
+                            <p class="card-text"> The algorithm had a time complexity of <b>n</b>, and every successive core reduced the time to compute linearly. This was because each core could work individually on each batch, as all the data was independent of each other.</p>
+                            <p class="card-text"> <b>Conclusion:</b> it's important to note that, the speed of each core and the number of cores are semi-interchangeable, and also "equally" important to time complexity. </p>
+                            </div>
+                          
+                        </div>
+                        <div class="col-xl-6">
+                          <img src="img/Blue_Theme_Res/Carleton_Graphs/Intigration.png" style = "border-left: 1px solid; border-top-left-radius: 0;border-bottom-left-radius: 0 "class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin: 0; border: 0px;border-bottom: 1px solid; margin-bottom: 0px">
+                    <div class="row no-gutters">
+                        <div class="col-xl-6">
+                          <div class="text-center" style="margin-top: 2%">
+                            <h3>Conways Game of Life</h3>
+                            <hr style = "width: 50%; border: 1px solid; color: blue">
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Using the MPI Frame work, I built a parallel version of Conways Game of Life. The dotted lines represent a Raspberry Pi CPU (with a <b>1.2 GHz</b> clock speed) where as the straight line represents a Local Cluster CPU (with a <b>2 GHz</b> clock speed) </p>
+                            <p class="card-text"> The algorithm had a time complexity of <b>n^2</b>. However, adding more cores after 4 would actually reduce the time complexity. This was because after every generation, each of the cores would have to communicate with each other, so the benefit of an extra core is less than the "cost" of communication.   
+                            <p class="card-text"> <b>Conclusion:</b> when you have a program that has a lot of operations, but each operation has a low time complexity, adding more cores doesn't always help, but increasing the speed of the cores will always help with time complexity. 
+                            </div>
+              
+    
+                        </div>
+                        <div class="col-xl-6">
+                          <img src="img/Blue_Theme_Res/Carleton_Graphs/Conways.png" style = "border-left: 1px solid; border-top-left-radius: 0;border-bottom-left-radius: 0 "class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin: 0; border: 0px">
+                    
+                            
+                    <div class="row no-gutters">
+                        <div class="col-xl-6">
+                          <div class="text-center" style="margin-top: 2%">
+                            <h3>Waterfill Path Finding</h3>
+                            <hr style = "width: 50%; border: 1px solid; color: blue">
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Using the MPI Frame work, I built a parallel version of Waterfill Search. The dotted lines represent a Raspberry Pi CPU (with a <b>1.2 GHz</b> clock speed) where as the straight line represents a Local Cluster CPU (with a <b>2 GHz</b> clock speed) </p>
+                            <p class="card-text"> The algorithm had a time complexity of <b>n^2</b>. It can be seen that adding more cores has a minimal effect on the time to compute, but the speed of each core has a large effect. This is because each "core" will only compute within its own zone (hard to explain in text), which means that much of the time cores are not working.
+                            <p class="card-text"> <b>Conclusion:</b> for a program where the operations can’t be easily distributed across multiple cores, it may be more important to increase the speed of each core then just adding more of them. 
+                          </div>
+  
+
+                        </div>
+                        <div class="col-xl-6">
+                          <img src="img/Blue_Theme_Res/Carleton_Graphs/Pathfind.png" style = "border-left: 1px solid; border-top-left-radius: 0;border-bottom-left-radius: 0 "class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+                
+           
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom: 1%" id = "EEtitle">
+            <div class="card-header">
+                <h5 class="card-title"><span class = "bluemain">IAs and EEs!</span></h5>
+            </div>
+        </div>
+        
+        <div class="card" id = "EE">
+            <div class="card" style="margin: 0; border: 0px">
+              <div class="row">
+                  <div class="col-lg-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      
+                      <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"> Operations Research and Battle Formations (2019 HL Math)</a>
+                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Thermodynamics and Wire Phyiscs (2019 HL Physics)</a>
+                       <a class="nav-link" id="econ-tab" data-toggle="pill" href="#econ" role="tab" aria-controls="econ" aria-selected="false"> Japan's Economic Growth and Effects of Deflation  (2019 HL Economics) </a>
+                      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Compliers and Run Time (2018 Extended Essay)</a>
+                      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Gracchi Brothers and Roman Politics (2018 SL Latin) </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <object data="doc/ee.pdf" type="application/pdf" width="100%" height= 800em>
+  
+                        </object>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <object data="doc/math.pdf" type="application/pdf" width="100%" height= 800em>
+  
+                        </object>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <object data="doc/physics.pdf" type="application/pdf" width="100%" height= 800em>
+  
+                        </object>
+                      </div>
+                      <div class="tab-pane fade" id="econ" role="tabpanel" aria-labelledby="econ-tab">
+                        <object data="doc/econ.pdf" type="application/pdf" width="100%" height= 800em>
+  
+                        </object>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <object data="doc/latin.pdf" type="application/pdf" width="100%" height= 800em>
+  
+                        </object>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <!----- END OF BLUE ----->
+        
+        <!-- Slide Show -->
+        
+        <div class="card" style="margin-bottom: 1%">
+            <div class="card-header">
+                <h5 class="card-title"><span id = "7">Learn More About My:</span></h5>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom: 35%">
+            
+            <div id="myCarousel" class="carousel slide" style = "height: 40em" data-ride="carousel">
+                
+            <!-- Indication @ Bottom -->
+                
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                
+                <div class="carousel-inner">
+
+                  <!-- Hackathon -->
+
+                  <div class="carousel-item active">
+                    <img src = "img/hackathons.png" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightgreen" style="font-weight: bold"><h1>Hackathons</h1></span>
+                          <p>Learn more about my projects at different <span class = "lightgreen">hackathons</span>; I tackled issues ranging from finding the <span class = "lightgreen">optimum amount of sleep</span> to how to making a <span class = "lightgreen">class organizer</span> and <span class = "lightgreen">more</span>! </p>
+                        <p><a class="btn btn-lg btn-success" onclick="buttpressred()" role="button">Learn more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Research/Papers -->
+                
+                  <div class="carousel-item">
+                    <img src = "img/research.png" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightblue" style="font-weight: bold"><h1>Research & Papers</h1></span>
+                        <p>Learn more about my more <span class = "lightblue">academic experiences</span>: From my papers for the <span class = "lightblue">International Baccalaureate</span>, to my research at <span class = "lightblue">Carleton's SCSI</span> program and all my other educational experiences. </p>
+                        <p><a class="btn btn-lg btn-primary" onclick="buttpressblue()" role="button">Go To</a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- Coding -->
+                
+                  <div class="carousel-item">
+                    <img src = "img/coding.jpg" width="100%" height="100%" focusable="false" role="img">
+                    <div class="container">
+                      <div class="carousel-caption">
+                        <span class = "lightred" style="font-weight: bold"><h1>Programming</h1></span>
+                          <p>Learn more about my front end and back end <span class = "lightred">coding</span> experiences: From my work in designing <span class = "lightred">registration systems</span>, to my participation in <span class = "lightred">coding contests</span> and all my other coding experiences!
+                        <p><a class="btn btn-lg btn-danger" onclick="buttpressred()" role="button">Go To</a></p>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+                
+                <!-- Control -->
+                
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                
+            </div>
+        </div>
+        
+    
+        
+        
+    
+        
+        <!-- Contact Info/Footer -->
+        
+        
+        <div class="justify-content-md-center">
+            <div class="jumbotron justify-content-md-center" style="opacity: 0.85; margin-bottom: 20%; width: 90%;margin-left: 5%">
+                
+              <!-- Greeting -->
+                
+              <h1 class="display-4">Any Questions?</h1>
+              <p class="lead">I am happy to answer any questions that you may have, so feel free to get in touch!</p>
+              <hr class="my-4">
+                
+              <!-- Type Form -->
+                
+              <form accept-charset="utf-8" action="https://formspree.io/robbie.knowles@ucc.on.ca" method="post">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" name="name" class = "form-control" placeholder="First Name" required="">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control" name="_replyto" placeholder="Contact Email" required="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mt-2 ml-0">
+                      <textarea rows="5" class = "form-control" name="message" id="message" placeholder="Your message here." required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mt-2 ml-0">
+                        <input class="btn btn-lg btn-danger" type="submit" value="Submit Your Message">
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            
+             <!-- Footer -->
+            <hr id = "bar" class="my-3" style = "width: 20%; border: 1px solid; color: red">
+            <div class="row justify-content-center" style="text-align: center">
+                <div class="col-6 ">
+                    <a href="https://github.com/rbrtknwls" style="display: inline-block"><i id = "git" class="fa fa-github fa-2x" style="color: red"></i></a>
+                    <a href="https://www.instagram.com/robbie.knowles/?hl=en" style="display: inline-block"><i id = "ins" class="fa fa-instagram fa-2x" style="color: red"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100012932622555" style="display: inline-block"><i id = "fac" class="fa fa-facebook fa-2x" style="color: red"></i></a>
+                    <a href="https://www.linkedin.com/in/robbie-knowles/" style="display: inline-block"><i id = "lin" class="fa fa-linkedin fa-2x" style="color: red"></i></a>
+                    <a href="https://devpost.com/rbrtknwls?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" style="display: inline-block"><i id = "cod" class="fa fa-code fa-2x" style="color: red"></i></a>
+                </div>
+            </div>
+                
+    
+            <br>
+
+          </div>
+        </div>
+        
+        
+		<!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script> 
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/script.js"></script>
+        
+        
+	</body>
 </html>
