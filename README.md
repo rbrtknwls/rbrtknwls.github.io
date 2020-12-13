@@ -1,25 +1,4 @@
 # Hey! (Currently Under A Massive Rework!)
-Welcome to my personal CV that I will use for hackathons and maybe to get a job??
-
-The website will have different sections depending on what you ask (will use NLP to find the closest copy):
-```
-Everything: About + Awards + Hackathons + Research + Outreach
-
-TLDR: About
-Bio: About + Awards
-Practical Knowlege: About + Awards + Hackathons
-Skills: Awards + Hackathons + Research
-Awards: Awards
-Passions: Hackathons + Outreach
-Work/Professional: About + Awards + Outreach
-Academic: About + Research
-Cool Stuff: Outreach + Hackathons
-
-And More!
-```
-
-## Landing Page:
-
 Here is the base of the website, its meant to look like a search bar so that you can ask # Hey! (Currently Under A Massive Rework!)
 Welcome to my personal CV that I will use for hackathons and maybe to get a job??
 
