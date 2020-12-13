@@ -1,16 +1,24 @@
 # Hey! (Currently Under A Massive Rework!)
-Welcome to my personal CV, that I use mainly for applying to hackathons (and maybe jobs in the future??)
+Welcome to my personal CV that I will use for hackathons and maybe to get a job??
 
-
-
-The website has three different layouts which are randomly picked upon loading:
+The website will have different sections depending on what you ask (will use NLP to find the closest copy):
 ```
-Hackathons; Where I store all my past projects that I have done, and some of prizes.[Not Done] 
-Research; Where I store all the papers and other academic work that I have created. [Done] 
-Programming; Where I share my goings-on vis-à-vis coding contests and my job(s). [Done] 
-```
-All the "art" on the website is made by me! If you are interested I can post a link where you can download it, or you can just use inspect element and take it that way...
+Everything: About + Awards + Hackathons + Research + Outreach
 
+TLDR: About
+Bio: About + Awards
+Practical Knowlege: About + Awards + Hackathons
+Skills: Awards + Hackathons + Research
+Awards: Awards
+Passions: Hackathons + Outreach
+Work/Professional: About + Awards + Outreach
+Academic: About + Research
+Cool Stuff: Outreach + Hackathons
+
+And More!
+```
+
+## Front Page:
 Anyways heres some of the stuff I finished and stuff I plan to add:
 - [x] Programming
   - [x] Work Experience WAC
