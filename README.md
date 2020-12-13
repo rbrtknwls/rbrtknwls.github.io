@@ -18,35 +18,16 @@ Cool Stuff: Outreach + Hackathons
 And More!
 ```
 
-## Front Page:
-Anyways heres some of the stuff I finished and stuff I plan to add:
-- [x] Programming
-  - [x] Work Experience WAC
-  - [x] Work Experience TOHC
-  - [x] Games! 
-    - [x] Pong
-    - [ ] Space Invaders
-    - [ ] (aptly named) RPG game
-    - [ ] The Night
-    - [ ] Ski Escape
-  - [x] Awards
-- [x] Research
-    - [x] Carleton College Research
-      - [x] MPI Conways Game of Life
-      - [x] MPI WaterFill
-      - [x] MPI Integration
-    - [x] IB Extended Essay
-    - [x] IB Independent Assignments
-      - [x] Operations Research and Combat Positions (HL Math Paper)
-      - [x] Thermodynamics and Wire Physics (HL Physics Paper)
-      - [x] More??? Im not sure... I could add my Latin, or Economics Papers..
-    - [ ] (maybe) Add a booklist of stuff I found interesting??
-- [ ] Hackathons
-  - [ ] Data Base Style Projects:
-    - [ ] Ez Nav (Hack Lassonde)
-    - [ ] School Center (Massey Hacks)
-  - [ ] Informative / Starter Hacks:
-    - [ ] Get Smart(er) (Jam Hacks 2)
-    - [ ] SAid (BLG Learning Group)
-  - [ ] Others..?!? 
-  - [ ] Calender with Hackathons I got into / applied too
+## Landing Page:
+
+Here is the base of the website, its meant to look like a search bar so that you can ask a question and the website will evolve around that question.. | ![landing](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Home%20Page.png)
+| :--- | ---: 
+
+### Possible Alternatives (Depends on what was searched)
+
+Will be the landing page when you ask about me, I will make some kind of minimilist art that will slowly fade in, I think this colour will be red! | ![about](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/About%20Me.png)
+| :--- | ---: 
+Will be the landing page when you ask about projects, I will make some kind of minimilist art that will slowly fade in, I think this colour will be green! | ![project](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Projects.png)
+Will be the landing page when you ask about outreach, I will make some kind of minimilist art that will slowly fade in, I think this colour will be blue! | ![out](https://github.com/rbrtknwls/rbrtknwls.github.io/blob/master/planning/Outreach%20.png)
+
+## Project Stream:
